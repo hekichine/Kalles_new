@@ -1,0 +1,143 @@
+effect-custom {
+  position: relative;
+  width: 550px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 0.5px solid var(--2, #FFF);
+  background: rgba(32, 32, 32, 0.32);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+
+}
+
+effect-custom [effect-parent] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  filter: blur(5px);
+}
+
+effect-custom [effect-parent] span {
+  width: var(--size, 90px);
+  height: var(--size, 90px);
+  position: absolute;
+  top: var(--top, 20%);
+  left: var(--left, 20%);
+  background: var(--color, linear-gradient(80.57deg, #CE1BFB 10.86%, #35E6CC 89.96%));
+  --size: 200px;
+  border-radius: 100%;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: var(--animation-delay);
+  filter: blur(15px);
+  transition: all 1.5s linear;
+  opacity: 0.5;
+}
+
+effect-custom [effect-parent] span:nth-child(1) {
+  --size: 50px;
+  --top: 5%;
+  --left: 25%;
+  --color: linear-gradient(80.57deg, #5128E3 10.86%, #AA3BF2 89.96%);
+  --animation-delay: 1s;
+
+}
+
+effect-custom [effect-parent] span:nth-child(2) {
+  --size: 50px;
+  --top: 9%;
+  --left: 40%;
+  --color: linear-gradient(99.68deg, #00BAD4 7.72%, #2194FF 118.76%);
+  --animation-delay: 2s;
+
+}
+
+effect-custom [effect-parent] span:nth-child(3) {
+  --size: 50px;
+  --top: 10%;
+  --left: 50%;
+  --color: linear-gradient(80.57deg, #CE1BFB 10.86%, #35E6CC 89.96%);
+  --animation-delay: 3s;
+
+}
+
+effect-custom [effect-parent] span:nth-child(4) {
+  --size: 50px;
+  --top: 30%;
+  --left: 15%;
+  --color: linear-gradient(81.01deg, #5C39B3 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%);
+  --animation-delay: 7s;
+
+}
+
+effect-custom [effect-parent] span:nth-child(n+5) {
+  --size: 44px;
+  --top: 77%;
+  --left: 22%;
+  --color: #ca7c7c;
+  --animation-delay: 0s;
+
+}
+
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  z-index: 2;
+}
+
+@keyframes move {
+
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+
+  10% {
+    transform: translateX(20%) translateY(5%) translateZ(20px);
+  }
+
+  20% {
+    transform: translateX(70%) translateY(2%) translateZ(20px);
+  }
+
+  30% {
+    transform: translateX(100%) translateY(5%) translateZ(20px);
+  }
+
+  40% {
+    transform: translateX(40%) translateY(2%) translateZ(20px);
+  }
+
+  50% {
+    transform: translateX(-10%) translateY(5%) translateZ(20px);
+  }
+
+  60% {
+    transform: translateX(-60%) translateY(2%) translateZ(20px);
+  }
+
+  70% {
+    transform: translateX(-100%) translateY(5%) translateZ(20px);
+  }
+
+  80% {
+    transform: translateX(-50%) translateY(2%) translateZ(20px);
+  }
+
+  90% {
+    transform: translateX(-30%) translateY(5%) translateZ(20px);
+  }
+
+}
