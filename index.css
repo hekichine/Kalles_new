@@ -29,8 +29,8 @@ effect-custom [effect-parent] span {
   width: var(--size, 90px);
   height: var(--size, 90px);
   position: absolute;
-  top: var(--top, 20%);
-  left: var(--left, 20%);
+  top: var(--top);
+  left: var(--left);
   background: var(--color, linear-gradient(80.57deg, #CE1BFB 10.86%, #35E6CC 89.96%));
   --size: 200px;
   border-radius: 100%;
@@ -68,27 +68,26 @@ effect-custom [effect-parent] span:nth-child(3) {
   --left: 50%;
   --color: linear-gradient(80.57deg, #CE1BFB 10.86%, #35E6CC 89.96%);
   --animation-delay: 3s;
-
 }
 
 effect-custom [effect-parent] span:nth-child(4) {
   --size: 50px;
-  --top: 30%;
+  --top: 10%;
+  --left: 50%;
+  --animation-delay: 3s;
+}
+effect-custom [effect-parent] span:nth-child(5) {
+  --size: 30px;
+  --top: 13%;
   --left: 15%;
-  --color: linear-gradient(81.01deg, #5C39B3 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%);
-  --animation-delay: 7s;
-
+  --animation-delay: 3s;
 }
-
-effect-custom [effect-parent] span:nth-child(n+5) {
-  --size: 44px;
-  --top: 77%;
-  --left: 22%;
-  --color: #ca7c7c;
-  --animation-delay: 0s;
-
+effect-custom [effect-parent] span:nth-child(6) {
+  --size: 20px;
+  --top: 10%;
+  --left: 50%;
+  --animation-delay: 3s;
 }
-
 
 button {
   background-color: transparent;
