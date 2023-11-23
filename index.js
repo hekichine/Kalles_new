@@ -1,3 +1,9 @@
+{/* <effect-custom type='button' eff-num="6">
+    <div effect-parent>
+      
+    </div>
+    <button>See more</button>
+  </effect-custom> */}
 class Effect extends HTMLElement {
   constructor() {
     super();
