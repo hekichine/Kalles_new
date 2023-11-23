@@ -6,6 +6,7 @@ class Effect extends HTMLElement {
     }
     this.EffNum = this.getAttribute('eff-num');
     this.container = this.querySelector('div[effect-parent]');
+    this.background = 'none';
     this.createChild();
     this.addEventListener('mousemove', (e) => {
       this.onHover(e);
@@ -15,9 +16,21 @@ class Effect extends HTMLElement {
     })
   }
   createChild() {
+    console.log("if > 3 item => Random color is running");
     for (let i = 0; i < this.EffNum; i++) {
+      if (i > 2) {
+        // random position
+        this.randomPos = this.randomRangeInt(30, 100);
+        //  random color background linear
+        this.randomColor();
+        //  add element item
+        this.span = document.createElement('span');
+        this.span.style.background = `${this.background}`;
+        this.container.append(this.span);
+        continue;
+      }
       this.span = document.createElement('span');
-      this.container.append(this.span)
+      this.container.append(this.span);
     }
   }
   randomRangeInt(min, max) {
@@ -28,20 +41,32 @@ class Effect extends HTMLElement {
     this.x = e.offsetX;
     this.y = e.offsetY;
     // console.log(this.x,this.y);
-
+    this.classList.add('is-hover')
     this.arr = this.querySelectorAll('div[effect-parent] span');
-    this.arr.forEach((el) => {
-      el.style.top = `${this.y}px`;
-      el.style.left = `${this.x}px`;
-      // el.style.animationDuration = '10s';
-      // el.style.transform = `translateX(100%)`
+    this.arr.forEach((el, index) => {
+      el.style.setProperty('--top',`${this.y}px`) 
+      el.style.setProperty('--left',`${this.x}px`)
     })
   }
   leaveHover() {
     this.arr = this.querySelectorAll('div[effect-parent] span');
-    this.arr.forEach((el) => {
-      el.setAttribute('style', '')
+    this.arr.forEach((el,index) => {     
+      el.style.removeProperty('--top');
+      el.style.removeProperty('--left');
+      // console.log(index);
     })
+  }
+  randomColor() {
+    const direction = Math.round(Math.random() * 360);
+    const r1 = Math.round(Math.random() * 255); 
+    const g1 = Math.round(Math.random() * 255);
+    const b1 = Math.round(Math.random() * 255); 
+    const a1 = Math.round(Math.random() * 10) / 10;
+    const r2 = Math.round(Math.random() * 255);
+    const g2 = Math.round(Math.random() * 255);
+    const b2 = Math.round(Math.random() * 255);
+    const a2 = Math.round(Math.random() * 10) / 10;
+    this.background = `linear-gradient(${direction}deg, rgba(${r1},${g1},${b1},${a1}), rgba(${r2},${g2},${b2},${a2}))`;
   }
 }
 customElements.define('effect-custom', Effect);
