@@ -168,17 +168,17 @@ class RippeEffect extends HTMLElement {
     this.start()
   }
   start() {
-    // requestAnimationFrame(() => {
-    //   this.start()
-    // });
+    requestAnimationFrame(() => {
+      this.start()
+    });
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.drawWave(2, "tan");
-    this.drawWave(4, "tan");
-    this.drawWave(5, "tan");
-    this.drawWave(6, "tan");
-    this.drawWave(10, "tan");
-    this.drawWave(12, "tan");
-    this.drawWave(14, "tan");
+    this.drawWave(2, "cos");
+    this.drawWave(4, "cos");
+    this.drawWave(5, "cos");
+    this.drawWave(6, "cos");
+    this.drawWave(10, "cos");
+    this.drawWave(12, "cos");
+    this.drawWave(14, "cos");
     this.step += 5;
   }
   drawWave(amplitude, trig) {
