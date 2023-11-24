@@ -4,7 +4,9 @@
   1. Lib
     1.1 css
       - base.css  
+      - effect.css
       - index.css
+
 
     1.2 js
       - swiperjs
@@ -12,14 +14,13 @@
       - effect.js
       - isotopejs
 
-
 =========================
 */
 :root {
   --container-lg: 1810px;
   --container-md: 1200px;
 
-  --linear: linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%);
+  --linear1: linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%);
   --linear2: linear-gradient(81deg, #F253BA -2%, #FF6C80 29.96%, #FFF94F 63.99%);
   --linear3: linear-gradient(100deg, #00BAD4 7.72%, #2194FF 118.76%);
   --linear4: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.03) 100%);
@@ -33,15 +34,14 @@
   --card-des: rgba(255, 255, 255, 0.48);
   --card-btn-color: #fff;
 
-
+  --link-color: #fff;
+  --link-hover: #F200FF
 }
 
-
-section .linear {
-  background: var(--linear);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -53,12 +53,144 @@ body {
   line-height: 1.4;
   /* 22.4px */
   background-color: #000;
+  letter-spacing: .3px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+
+.text-linear {
+  background: var(--linear1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 99999% 100%;
+  transition: .3s ease-in-out;
+}
+
+.text-linear.hover {
+  background-position: 100%;
+}
+
+.text-linear.hover:hover {
+  background-position: 0;
+  background-size: 100% 100%;
+}
+
+.linear {
+  background: var(--linear1);
+}
+
+
+
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: .35s linear;
+
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.under-line {
+  text-decoration: underline;
+}
+
+.text-through {
+  text-decoration: line-through;
+}
+
+/* font-size */
+.fz-240 {
+  font-size: calc(240px * 1);
+}
+
+.fz-120 {
+  font-size: calc(120px * 1);
+}
+
+.fz-80 {
+  font-size: calc(80px * 1);
+}
+
+.fz-48 {
+  font-size: calc(48px * 1);
+}
+
+.fz-40 {
+  font-size: calc(40px * 1);
+}
+
+@media (max-width: 1365px) {
+  .fz-240 {
+    font-size: calc(240px * 0.8);
+  }
+
+  .fz-120 {
+    font-size: calc(120px * 0.8);
+  }
+
+  .fz-80 {
+    font-size: calc(80px * 0.8);
+  }
+
+  .fz-48 {
+    font-size: calc(48px * 0.8);
+  }
+
+  .fz-40 {
+    font-size: calc(40px * 0.8);
+  }
+}
+
+@media (max-width: 1049px) {
+  .fz-240 {
+    font-size: calc(240px * 0.55);
+  }
+
+  .fz-120 {
+    font-size: calc(120px * 0.55);
+  }
+
+  .fz-80 {
+    font-size: calc(80px * 0.55);
+  }
+
+  .fz-48 {
+    font-size: calc(48px * 0.55);
+  }
+
+  .fz-40 {
+    font-size: calc(40px * 0.55);
+  }
+}
+
+@media (max-width: 767px) {
+  .fz-240 {
+    font-size: calc(240px * 0.15);
+  }
+
+  .fz-120 {
+    font-size: calc(120px * 0.2);
+  }
+
+  .fz-80 {
+    font-size: calc(80px * 0.3);
+  }
+
+  .fz-48 {
+    font-size: calc(48px * 0.4);
+  }
+
+  .fz-40 {
+    font-size: calc(40px * 0.4);
+  }
+
+  body {
+    font-size: 12px;
+  }
 }
 
 .container,

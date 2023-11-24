@@ -1,0 +1,44 @@
+section.topbar .hdt-icon-wrap {
+  position: relative;
+  width: fit-content !important;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.topbar .hdt-icon-wrap .hdt-icon {
+  z-index: 2;
+}
+
+section.topbar .fire {
+  --icon-color: #F64B2C;
+}
+
+section.topbar .storm {
+  --icon-color: #F5C413
+}
+
+section.topbar .hdt-icon-wrap::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--icon-color);
+  z-index: 1;
+  filter: blur(10px);
+}
+
+section.topbar .hdt-icon-wrap::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--icon-color);
+  z-index: 1;
+  filter: blur(19px);
+}
