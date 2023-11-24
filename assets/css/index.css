@@ -29,6 +29,7 @@ section.topbar .hdt-icon-wrap::after {
   background-color: var(--icon-color);
   z-index: 1;
   filter: blur(10px);
+  z-index: -1;
 }
 
 section.topbar .hdt-icon-wrap::before {
@@ -41,4 +42,5 @@ section.topbar .hdt-icon-wrap::before {
   background-color: var(--icon-color);
   z-index: 1;
   filter: blur(19px);
+  z-index: -1;
 }
