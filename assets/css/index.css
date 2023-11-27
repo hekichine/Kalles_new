@@ -236,12 +236,13 @@ section.topbar .hdt-icon-wrap::before {
   left: 0;
   right: 0;
   position: fixed;
+  background-color: transparent;
 }
 
 .header .header-sticky {
   top: 0;
-  background-color: rgba(0, 0, 0, 1);
-  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(15px);
 }
 
 .header header-custom {
@@ -294,6 +295,10 @@ main {
 @media (max-width: 767px) {
   .topbar .item-inner {
     padding: 15px 20px;
+  }
+
+  .header .logo_brand svg {
+    width: 90px;
   }
 
 }
