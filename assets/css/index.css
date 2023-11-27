@@ -104,8 +104,9 @@ section.topbar .hdt-icon-wrap::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding-top: 40px;
+  padding-bottom: 40px;
   transform: translateY(-50%);
   opacity: 0;
   visibility: hidden;
@@ -222,6 +223,28 @@ section.topbar .hdt-icon-wrap::before {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
   background-color: #fff;
+}
+
+.header .header-transparent {
+  top: 56px;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.header .header-sticky {
+  top: 0;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+}
+
+.header header-custom {
+  transition: .35s ease-in-out;
+}
+
+main {
+  height: 4000px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 1150px) {
