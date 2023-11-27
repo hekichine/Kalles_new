@@ -76,6 +76,9 @@ class Effect extends HTMLElement {
     if (this.getAttribute('type') !== 'button') {
       return;
     }
+    if (!this.querySelector('[effect-parent]')) {
+      return
+    }
     this.EffNum = this.getAttribute('eff-num');
     this.container = this.querySelector('div[effect-parent]');
     this.background = 'none';
@@ -202,3 +205,52 @@ class RippeEffect extends HTMLElement {
   }
 }
 customElements.define('ripple-effect', RippeEffect)
+
+class galaxy extends HTMLElement {
+  constructor() {
+    super();
+    this.cnv = this.querySelector('canvas');
+    this.ctx = this.cnv.getContext('2d')
+    this.star_num = 200;
+    this.r = 3;
+    this.w = this.cnv.width;
+    this.h = this.cnv.height;
+    this.speed = 5;
+    this.arrPos = [{
+      x: 0,
+      y: 0,
+      color: '#fff'
+    }];
+    // this.randomPos()
+    // this.render();
+  }
+  render() {
+    for (let i = 0; i < this.arrPos.length; i++) {
+      this.star(this.arrPos[i].x, this.arrPos[i].y, this.r, this.arrPos[i].color)
+    }
+    requestAnimationFrame(() => {
+      this.render()
+    })
+  }
+  randomPos() {
+    for (let i = 0; i < this.star_num; i++) {
+      let x = Math.random() * this.w;
+      let y = Math.random() * this.h;
+      let color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+      this.arrPos.push({ x: x, y: y, color: color })
+    }
+    requestAnimationFrame(() => {
+      this.randomPos()
+    })
+
+  }
+  star(x, y, r, color) {
+
+    this.ctx.clearRect(0, 0, this.w, this.h);
+    this.ctx.fillStyle = color;
+    this.ctx.beginPath();
+    this.ctx.arc(x, y, r, 0, Math.PI * 2);
+    this.ctx.fill();
+  }
+}
+customElements.define('canvas-galaxy', galaxy)

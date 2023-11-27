@@ -1,17 +1,7 @@
-
 effect-custom {
   position: relative;
-  width: 550px;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  border: 0.5px solid var(--2, #FFF);
-  background: rgba(32, 32, 32, 0.32);
-  backdrop-filter: blur(8px);
-  z-index: 1;
-
+  height: 100%;
+  display: inline-block;
 }
 
 effect-custom [effect-parent] {
@@ -77,12 +67,14 @@ effect-custom [effect-parent] span:nth-child(4) {
   --left: 50%;
   --animation-delay: 3s;
 }
+
 effect-custom [effect-parent] span:nth-child(5) {
   --size: 30px;
   --top: 13%;
   --left: 15%;
   --animation-delay: 3s;
 }
+
 effect-custom [effect-parent] span:nth-child(6) {
   --size: 20px;
   --top: 10%;
@@ -141,27 +133,31 @@ button {
   }
 
 }
+
 /* filltext */
-fill-text{
+fill-text {
   height: 100vh;
   position: relative;
   display: flex;
 }
-fill-text .fill-inner{
+
+fill-text .fill-inner {
   position: -webkit-sticky;
   position: sticky;
-  top:0;
+  top: 0;
   height: 300px;
   display: flex;
   align-items: center;
 
 }
-fill-text .text span{
+
+fill-text .text span {
   opacity: 0.3;
   transition: opacity .35s linear;
   will-change: opacity;
   color: #fff;
 }
-fill-text .text .highlight{
+
+fill-text .text .highlight {
   opacity: 1;
 }
