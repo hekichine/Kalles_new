@@ -267,6 +267,7 @@ section.topbar .hdt-icon-wrap::before {
   z-index: -1;
   pointer-events: none;
   user-select: none;
+  overflow: hidden;
 }
 
 .banner .light_eff .line-eff {
