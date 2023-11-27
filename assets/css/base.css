@@ -93,6 +93,7 @@ a {
   text-decoration: none;
   transition: .35s linear;
   pointer-events: auto !important;
+  cursor: pointer;
 }
 
 a:hover {
@@ -436,7 +437,6 @@ drawer#menu_mobile {
   padding: 17px 24px;
   height: 56px;
   color: #FFF;
-  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 22.4px;
@@ -452,7 +452,7 @@ drawer#menu_mobile {
 }
 
 #menu_mobile .nav_list_mb ul a {
-  padding: 10px 15px;
+  padding: 15px 25px;
   display: block;
 }
 
