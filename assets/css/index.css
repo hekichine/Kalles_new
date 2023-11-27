@@ -135,8 +135,14 @@ section.topbar .hdt-icon-wrap::before {
   align-items: flex-end;
 }
 
+.header_wrap ul li {
+  position: relative;
+}
+
 .header_wrap ul a {
   padding: 0 12px;
+  height: 22px;
+  display: inline-block;
 }
 
 .header_wrap .call_to_action .cta {
