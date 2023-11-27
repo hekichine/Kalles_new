@@ -162,7 +162,12 @@ section.topbar .hdt-icon-wrap::before {
   font-weight: 500;
   line-height: 22.4px;
   width: 184px;
+  transition: .25s ease-in-out;
   /* */
+}
+
+.call_to_action .cta:hover {
+  color: var(--accent-color);
 }
 
 .header .logo_brand {
@@ -255,9 +260,6 @@ section.topbar .hdt-icon-wrap::before {
 ===================
 */
 
-.banner .call_to_action .cta {
-  width: unset;
-}
 
 .banner .light_eff {
   position: absolute;
@@ -283,6 +285,108 @@ section.topbar .hdt-icon-wrap::before {
   position: relative;
   padding-top: 214px;
 }
+
+.banner .heading-top {
+  margin-bottom: 12px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+.banner .heading-bot {
+  font-weight: 500;
+  margin-bottom: 40px;
+  line-height: 100px;
+  letter-spacing: -2.4px;
+}
+
+.banner .des {
+  color: rgba(255, 255, 255, 0.47);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-bottom: 56px;
+  /*  */
+}
+
+.banner .group_btns {
+  gap: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.banner .call_to_action .cta {
+  width: unset;
+  gap: 8px;
+}
+
+.banner .border_eff {
+  position: relative;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.banner .border_eff effect-custom::before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  right: -7px;
+  bottom: -7px;
+  left: -7px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .05);
+  opacity: 0;
+  border-radius: 14px;
+  transition: opacity .25s ease-in-out;
+  will-change: opacity;
+}
+
+.banner .border_eff::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #00BAD4;
+  top: 60%;
+  left: -1px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out, top .25s ease-in-out;
+  will-change: opacity, top;
+}
+
+.banner .border_eff:hover {
+  background: rgba(32, 32, 32, 0.32);
+  backdrop-filter: blur(8px);
+  will-change: background, backdrop-filter;
+}
+
+.banner .border_eff::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #00BAD4;
+  bottom: 60%;
+  right: -1px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out, bottom .25s ease-in-out;
+  will-change: opacity, bottom;
+}
+
+.banner .border_eff:hover::before {
+  top: 30%;
+  opacity: 1;
+}
+
+.banner .border_eff:hover::after {
+  bottom: 30%;
+  opacity: 1;
+}
+
+.banner .border_eff:hover effect-custom::before {
+  opacity: 1;
+}
+
 
 @media (min-width: 1150px) {
   .header .container {
