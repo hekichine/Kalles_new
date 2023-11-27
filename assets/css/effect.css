@@ -161,3 +161,19 @@ fill-text .text span {
 fill-text .text .highlight {
   opacity: 1;
 }
+
+/* effect svg opacity */
+
+@keyframes line-eff {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: rotate(0) scale(0.9) translate3d(0, 0, 0);
+  }
+
+  50% {
+    opacity: .7;
+    transform: rotate(-3deg) scale(1) translate3d(10px, 20px, 0);
+  }
+}

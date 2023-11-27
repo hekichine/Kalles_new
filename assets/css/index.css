@@ -145,7 +145,7 @@ section.topbar .hdt-icon-wrap::before {
   display: inline-block;
 }
 
-.header_wrap .call_to_action .cta {
+.call_to_action .cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -249,12 +249,84 @@ section.topbar .hdt-icon-wrap::before {
   transition: .35s ease-in-out;
 }
 
-main {
-  height: 4000px;
-  background-color: rgba(255, 255, 255, 0.3);
+/* 
+===================
+  3. Banner
+===================
+*/
+
+.banner .call_to_action .cta {
+  width: unset;
+}
+
+.banner .light_eff {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.banner .light_eff .line-eff {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.banner .line-eff-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+
+}
+
+.banner .line-eff-item:nth-child(1) {
+  left: 15%;
+  animation-delay: 1s;
+}
+
+.banner .line-eff-item:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 2s;
+}
+
+.banner .line-eff-item:nth-child(3) {
+  left: 33%;
+  animation-delay: 3s;
+}
+
+.banner .line-eff-item:nth-child(4) {
+  left: 44%;
+  animation-delay: 4s;
+}
+
+.banner .line-eff-item:nth-child(5) {
+  left: 55%;
+  animation-delay: 5s;
+}
+
+.banner .line-eff-item g {
+  opacity: 0.3;
+  animation: line-eff 5s infinite;
+  box-shadow: 1px 1px 1px #fff;
+  filter: blur(55px);
+  color: rgba(255, 255, 255, .2);
+}
+
+.banner .section-inner {
+  position: relative;
+  padding-top: 214px;
 }
 
 @media (min-width: 1150px) {
+  .header .container {
+    width: 1860px;
+  }
+
   .header .cta_menu_mb:hover span:nth-child(1) {
     top: -4px;
     -webkit-transition: .20s ease-in-out;
