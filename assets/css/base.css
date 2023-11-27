@@ -61,14 +61,19 @@ body {
 }
 
 header {
-  z-index: 9999;
+  z-index: 9;
   position: relative;
+}
+
+drawer {
+  z-index: 10;
 }
 
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  user-select: none;
 }
 
 .text-linear {
@@ -413,6 +418,10 @@ drawer#menu_mobile {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+#menu_mobile .logo_brand img {
+  width: fit-content;
 }
 
 #menu_mobile .cta {
