@@ -700,6 +700,23 @@ section.topbar .hdt-icon-wrap::before {
   /* display: none; */
 }
 
+.banner .tab_content {
+  position: relative;
+}
+
+.banner .tab_content_inner {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.banner .tab_content_inner.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
 @media (min-width: 1150px) {
   .header .container {
     width: 1860px;

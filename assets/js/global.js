@@ -151,7 +151,21 @@ class tabsBuilder extends HTMLElement {
           tabs_active.classList.remove('active');
         }
         tab.classList.add('active');
+        self.querySelector('.tab_content_inner.active').classList.remove('active');
+        self.querySelector(`${tab.getAttribute('data-tab-trigger')}.tab_content_inner`).classList.add('active');
         // console.log(tab.getAttribute('data-tab-trigger'));
+        let btn = self.querySelector('.tab_content_inner.active button.item.active');
+        if (btn.getAttribute('aria-controls') == 'mobile') {
+          self.swiper.destroy(true, true);
+          self.swiper = self.initSwiper(self.paramsMobile);
+          // self.swiper.slideTo(self.swiper.activeIndex, 2)
+          // console.log(self.swiper);
+        } else {
+          self.swiper.destroy(true, true);
+          self.swiper = self.initSwiper(self.paramsDesktop);
+          // self.swiper.slideTo(self.swiper.activeIndex, 1)
+          // console.log(self.swiper);
+        }
       })
     })
   }
@@ -163,9 +177,12 @@ class tabsBuilder extends HTMLElement {
       if (btns) {
         btns.forEach(btn => {
           btn.addEventListener('click', function () {
-            self.querySelector('button.item.active').classList.remove('active');
+
+            self.querySelector('.tab_content_inner.active button.item.active').classList.remove('active');
             btn.classList.add('active');
-            self.querySelector('.tab_content_inner.active .swiper').setAttribute('slider-type', btn.getAttribute('aria-controls'))
+
+            self.querySelector('.tab_content_inner.active .swiper').setAttribute('slider-type', btn.getAttribute('aria-controls'));
+
             if (btn.getAttribute('aria-controls') == 'mobile') {
               self.swiper.destroy(true, true);
               self.swiper = self.initSwiper(self.paramsMobile);
