@@ -54,7 +54,7 @@ class Header extends HTMLElement {
     let self = this;
     window.addEventListener('scroll', function () {
       if (document.body.scrollTop > 56 || document.documentElement.scrollTop > 56) {
-        console.log(self);
+        // console.log(self);
         self.classList.add('header-sticky')
       } else {
         self.classList.remove('header-sticky')
@@ -68,7 +68,123 @@ class Header extends HTMLElement {
 
 }
 customElements.define('header-custom', Header)
+
+
 // ============================
-// Header nav_link active
+// Banner tabs-builder
 // ============================
 
+class tabsBuilder extends HTMLElement {
+  constructor() {
+    super();
+    this.tabs = this.querySelectorAll('.tab-item');
+    if (!this.tabs) {
+      return;
+    }
+    if (window.innerWidth < 1024) {
+      return;
+    }
+    this.paramsDesktop = {
+      grabCursor: true,
+      slidesPerView: 'auto',
+      initialSlide: 1,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: [0, 0, -800],
+          rotate: [180, 0, 0],
+        },
+        next: {
+          shadow: true,
+          translate: [0, 0, -800],
+          rotate: [-180, 0, 0],
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: false,
+      },
+      on: {
+        init: function () {
+          console.log(" init");
+        },
+        update: function () {
+          console.log('update');
+        }
+      },
+    }
+    this.paramsMobile = {
+      grabCursor: true,
+      slidesPerView: 'auto',
+      initialSlide: 1,
+      centeredSlides: true,
+      effect: "cards",
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: false,
+      },
+      cardsEffect: {
+        perSlideOffset: 25,
+        perSlideRotate: 15,
+      },
+      on: {
+        init: function () {
+          console.log(" init");
+        },
+        update: function () {
+          console.log('update');
+        }
+      },
+    }
+    this.swiper = this.initSwiper(this.paramsDesktop);
+    this.mySwiper = this.querySelector('.tab_content_inner.active .swiper').swiper;
+    this.tabsList();
+    this.tabscontent();
+  }
+  tabsList() {
+    let self = this;
+    this.tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        let tabs_active = self.querySelector('.tab-item.active');
+        if (tabs_active) {
+          tabs_active.classList.remove('active');
+        }
+        tab.classList.add('active');
+        // console.log(tab.getAttribute('data-tab-trigger'));
+      })
+    })
+  }
+  tabscontent() {
+    let self = this;
+    let content_active = self.querySelector('.tab_content_inner.active');
+    if (content_active) {
+      let btns = self.querySelectorAll('button.item');
+      if (btns) {
+        btns.forEach(btn => {
+          btn.addEventListener('click', function () {
+            self.querySelector('button.item.active').classList.remove('active');
+            btn.classList.add('active');
+            self.querySelector('.tab_content_inner.active .swiper').setAttribute('slider-type', btn.getAttribute('aria-controls'))
+            if (btn.getAttribute('aria-controls') == 'mobile') {
+              self.swiper.destroy(true, true);
+              self.swiper = self.initSwiper(self.paramsMobile);
+              // self.swiper.slideTo(self.swiper.activeIndex, 2)
+              // console.log(self.swiper);
+            } else {
+              self.swiper.destroy(true, true);
+              self.swiper = self.initSwiper(self.paramsDesktop);
+              // self.swiper.slideTo(self.swiper.activeIndex, 1)
+              // console.log(self.swiper);
+            }
+          })
+        })
+      }
+    }
+  }
+  initSwiper(params) {
+    return new Swiper('.tab_content_inner.active .swiper', params);
+  }
+
+}
+customElements.define('tabs-builder', tabsBuilder)
