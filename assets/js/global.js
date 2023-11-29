@@ -81,15 +81,13 @@ class tabsBuilder extends HTMLElement {
     if (!this.tabs) {
       return;
     }
-    window.addEventListener('resize', function () {
-      if (window.innerWidth < 1024) {
-        return;
-      }
-    })
+    if (window.innerWidth < 992) {
+      return;
+    }
     this.paramsDesktop = {
       grabCursor: true,
       slidesPerView: 'auto',
-      initialSlide: 1,
+      initialSlide: 0,
       effect: "creative",
       creativeEffect: {
         prev: {
