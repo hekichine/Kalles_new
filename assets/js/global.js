@@ -104,6 +104,7 @@ class tabsBuilder extends HTMLElement {
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: false,
+        clickable: true,
       },
       on: {
         init: function () {
@@ -123,6 +124,7 @@ class tabsBuilder extends HTMLElement {
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: false,
+        clickable: true,
       },
       cardsEffect: {
         perSlideOffset: 25,

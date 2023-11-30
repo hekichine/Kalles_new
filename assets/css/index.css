@@ -409,12 +409,13 @@ section.topbar .hdt-icon-wrap::before {
   width: 884px;
   max-width: 100%;
   flex: 0 1 auto;
-
+  perspective: 650px;
 }
 
 .banner .ffy-item .ffy-inner {
   padding: 12px;
   position: relative;
+
 }
 
 .banner .ffy-item .ffy-inner::before {
@@ -769,6 +770,16 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (min-width: 1150px) {
+  .banner .ffy-item .ffy-inner {
+    transform: rotateY(-8deg);
+    transform-origin: 50% 50%;
+    transition: .35s linear;
+  }
+
+  .banner .ffy-item .ffy-inner:hover {
+    transform: rotateY(0);
+  }
+
   .header .container {
     width: 1860px;
   }
@@ -800,6 +811,10 @@ section.topbar .hdt-icon-wrap::before {
 @media (max-width: 1440px) {
   .banner .section-inner {
     padding-top: 150px;
+  }
+
+  .banner .col-left {
+    gap: 25px;
   }
 }
 
