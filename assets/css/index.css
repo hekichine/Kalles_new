@@ -769,6 +769,12 @@ section.topbar .hdt-icon-wrap::before {
   bottom: 10%;
 }
 
+.banner .banner_video {
+  width: 1240px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 @media (min-width: 1150px) {
   .banner .ffy-item .ffy-inner {
     transform: rotateY(-8deg);

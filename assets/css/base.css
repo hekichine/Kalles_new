@@ -69,7 +69,8 @@ drawer {
   z-index: 10;
 }
 
-img {
+img,
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -156,6 +157,23 @@ button:focus {
   display: block !important;
   padding-bottom: var(--ratio-percent);
   --ratio-percent: calc(100% / (var(--aspect-ratioapt)))
+}
+
+.ratio img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 .under-line {

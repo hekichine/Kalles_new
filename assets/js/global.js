@@ -207,3 +207,38 @@ class tabsBuilder extends HTMLElement {
 
 }
 customElements.define('tabs-builder', tabsBuilder)
+
+
+// ============================
+// video custom
+// ============================
+
+// structor
+// <video-custom config='{"time_start": 0}'>
+//  html
+//</video-custom>
+
+class customVideo extends HTMLElement {
+  constructor() {
+    super();
+    this.config = JSON.parse(this.getAttribute('config'));
+    if (!this.config) {
+      // return;
+    }
+    this.starttime = this.config.time_start;
+    this.video = this.querySelector('#video');
+    this.endtime = this.video.duration;
+    this.playVideo();
+  }
+  playVideo() {
+    let self = this;
+    self.video.addEventListener('ended', function () {
+      self.video.currentTime = self.starttime;
+      // console.log();
+      self.video.play();
+    });
+
+  }
+
+}
+customElements.define('custom-video', customVideo)
