@@ -75,6 +75,7 @@ video {
   height: 100%;
   object-fit: cover;
   user-select: none;
+  object-position: center;
 }
 
 .text-linear {
@@ -233,7 +234,29 @@ button:focus {
 
 @media (max-width: 1049px) {
   .fz-240 {
-    font-size: calc(240px * 0.55);
+    font-size: calc(240px * 0.75);
+  }
+
+  .fz-120 {
+    font-size: calc(120px * 0.75);
+  }
+
+  .fz-80 {
+    font-size: calc(80px * 0.75);
+  }
+
+  .fz-48 {
+    font-size: calc(48px * 0.75);
+  }
+
+  .fz-40 {
+    font-size: calc(40px * 0.75);
+  }
+}
+
+@media (max-width: 767px) {
+  .fz-240 {
+    font-size: calc(240px * 0.6);
   }
 
   .fz-120 {
@@ -251,19 +274,23 @@ button:focus {
   .fz-40 {
     font-size: calc(40px * 0.55);
   }
+
+  body {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 525px) {
   .fz-240 {
-    font-size: calc(240px * 0.15);
+    font-size: calc(240px * 0.45);
   }
 
   .fz-120 {
-    font-size: calc(120px * 0.2);
+    font-size: calc(120px * 0.4);
   }
 
   .fz-80 {
-    font-size: calc(80px * 0.3);
+    font-size: calc(80px * 0.4);
   }
 
   .fz-48 {
