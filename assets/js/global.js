@@ -77,6 +77,7 @@ customElements.define('header-custom', Header)
 class tabsBuilder extends HTMLElement {
   constructor() {
     super();
+
     this.tabs = this.querySelectorAll('.tab-item');
     if (!this.tabs) {
       return;
@@ -207,8 +208,6 @@ class tabsBuilder extends HTMLElement {
 
 }
 customElements.define('tabs-builder', tabsBuilder)
-
-
 // ============================
 // video custom
 // ============================
@@ -217,7 +216,6 @@ customElements.define('tabs-builder', tabsBuilder)
 // <video-custom config='{"time_start": 0}'>
 //  html
 //</video-custom>
-
 class customVideo extends HTMLElement {
   constructor() {
     super();

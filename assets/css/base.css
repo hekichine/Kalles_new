@@ -149,6 +149,7 @@ button:focus {
   width: 100%;
   position: relative;
   align-items: stretch;
+  pointer-events: none;
 }
 
 .ratio::after {
@@ -574,5 +575,96 @@ drawer#menu_mobile {
   100% {
     stroke-dashoffset: 0;
     stroke-width: 0pt;
+  }
+}
+
+/* col */
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: var(--spacing-x);
+  row-gap: var(--spacing-y);
+}
+
+.row-flex .col {
+  flex: 0 0 auto;
+  max-width: 100%;
+  width: calc(100% / var(--cols) - (var(--spacing-x, 0px) * calc(var(--cols) - 1) / var(--cols)));
+}
+
+.flex-cols-1 {
+  --cols: 1;
+}
+
+.flex-cols-2 {
+  --cols: 2;
+}
+
+.flex-cols-3 {
+  --cols: 3;
+}
+
+.flex-cols-4 {
+  --cols: 4;
+}
+
+.flex-cols-5 {
+  --cols: 5;
+}
+
+.flex-cols-6 {
+  --cols: 6;
+}
+
+@media (min-width: 768px) {
+  .md\:flex-cols-1 {
+    --cols: 1;
+  }
+
+  .md\:flex-cols-2 {
+    --cols: 2;
+  }
+
+  .md\:flex-cols-3 {
+    --cols: 3;
+  }
+
+  .md\:flex-cols-4 {
+    --cols: 4;
+  }
+
+  .md\:flex-cols-5 {
+    --cols: 5;
+  }
+
+  .md\:flex-cols-6 {
+    --cols: 6;
+  }
+}
+
+@media (min-width: 1150px) {
+  .lg\:flex-cols-1 {
+    --cols: 1;
+  }
+
+  .lg\:flex-cols-2 {
+    --cols: 2;
+  }
+
+  .lg\:flex-cols-3 {
+    --cols: 3;
+  }
+
+  .lg\:flex-cols-4 {
+    --cols: 4;
+  }
+
+  .lg\:flex-cols-5 {
+    --cols: 5;
+  }
+
+  .lg\:flex-cols-6 {
+    --cols: 6;
   }
 }
