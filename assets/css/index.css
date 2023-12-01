@@ -1551,6 +1551,10 @@ section.topbar .hdt-icon-wrap::before {
   --bs-gutter-y: 32px;
 }
 
+.grid_demos .section-inner {
+  margin-bottom: 114px;
+}
+
 @media (min-width: 1150px) {
 
   .demos_layout :where(.demo_demos, .demo_ec_demos),
@@ -1657,6 +1661,11 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 1149px) {
+
+  .grid_demos .section-inner {
+    margin-bottom: 50px;
+  }
+
   .demos_layout .row {
     --bs-gutter-x: 20px;
     --bs-gutter-y: 20px;
@@ -1871,6 +1880,10 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 767px) {
+  .grid_demos .section-inner {
+    margin-bottom: 30px;
+  }
+
   .demos_layout .title {
     font-size: 14px;
   }
