@@ -161,6 +161,10 @@ button:focus {
   --ratio-percent: calc(100% / (var(--aspect-ratioapt)))
 }
 
+.ratio::before {
+  display: none;
+}
+
 .ratio img {
   position: absolute;
   top: 0;
@@ -445,7 +449,15 @@ drawer#menu_mobile {
   }
 }
 
+@media (max-width: 991px) {
+  br {
+    display: none;
+  }
+
+}
+
 @media (max-width: 767px) {
+
   #menu_mobile .content {
     width: 70vw;
   }
@@ -485,7 +497,7 @@ drawer#menu_mobile {
     fill-opacity: 0;
   }
 
-  50% {
+  20% {
     fill-opacity: 1;
   }
 
