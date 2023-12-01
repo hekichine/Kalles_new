@@ -1731,6 +1731,10 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 767px) {
+  .banner .light_eff .line-eff {
+    display: none;
+  }
+
   .grid1 :is(.item3, .item4, .item5) .wrap_content {
     padding: 20px;
   }
