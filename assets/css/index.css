@@ -1731,6 +1731,10 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 767px) {
+  custom-video {
+    display: none;
+  }
+
   .banner .light_eff .line-eff {
     display: none;
   }
