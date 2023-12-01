@@ -37,4 +37,18 @@ $(document).on('DOMContentLoaded', function () {
     $('.header .header_wrap').addClass('open');
     $('.header .logo_brand').addClass('effect-running');
   });
+
+  //  isotope  demos 
+  let $grid = $("#demo_layout").isotope({
+    itemSelector: ".isotope-item",
+    layoutMode: "fitRows",
+    filter: "*",
+  });
+  $("[filter-tabs]").on("click", "a.demos_tab_item", function (e) {
+    e.preventDefault();
+    $(this).parents('[filter-tabs]').find('a.demos_tab_item.active').removeClass('active')
+    $(this).toggleClass('active')
+    let filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+  });
 })
