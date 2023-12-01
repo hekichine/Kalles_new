@@ -169,6 +169,7 @@ section.topbar .hdt-icon-wrap::before {
   font-weight: 500;
   line-height: 22.4px;
   transition: .25s ease-in-out;
+  white-space: nowrap;
   /* */
 }
 
