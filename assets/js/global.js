@@ -109,10 +109,10 @@ class tabsBuilder extends HTMLElement {
       },
       on: {
         init: function () {
-          console.log(" init");
+          // console.log(" init");
         },
         update: function () {
-          console.log('update');
+          // console.log('update');
         }
       },
     }
@@ -240,3 +240,31 @@ class customVideo extends HTMLElement {
 
 }
 customElements.define('custom-video', customVideo)
+
+
+const options = {
+  root: null,
+  rootMargin: '0 0 -200px 0',
+  threshold: 0
+}
+const connectIntersection = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      revealInterView(entry.target);
+    }
+  }, options)
+});
+
+const reveals = document.querySelectorAll('[reveal]');
+reveals.forEach(reveal => {
+  reveal.style.opacity = 0;
+  reveal.style.transform = 'translateY(20px)';
+  reveal.style.transition = 'all .35s ease';
+  reveal.style.willChange = 'opacity,transform';
+
+  connectIntersection.observe(reveal);
+})
+const revealInterView = (reveal) => {
+  reveal.style.opacity = 1;
+  reveal.style.transform = 'translateY(0)';
+}

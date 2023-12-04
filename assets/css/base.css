@@ -535,3 +535,16 @@ drawer#menu_mobile {
   scroll-snap-stop: always;
   padding: 5px;
 }
+
+.g-15 {
+  --bs-gutter-x: 15px;
+  --bs-gutter-y: 15px;
+}
+
+@media (min-width: 1150px) {
+
+  .g-lg-32 {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 32px;
+  }
+}

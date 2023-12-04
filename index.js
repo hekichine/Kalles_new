@@ -66,4 +66,11 @@ $(document).on('DOMContentLoaded', function () {
   wrapper.addEventListener('scroll', function () {
     nav.scrollTo(nav.querySelector('.active').offsetLeft - 50, 0);
   });
+
+  //  packery featured_packery
+  $('#featured_packery').isotope({
+    layoutMode: 'packery',
+    itemSelector: '.item'
+  });
+
 })
