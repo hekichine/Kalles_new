@@ -301,7 +301,7 @@
             <div class="nav_list">
               <ul>
                 <li>
-                  <a href="#" class="nav_link active">
+                  <a href="#demos" class="nav_link">
                     Demos
                   </a>
                 </li>
@@ -354,7 +354,7 @@
       </div>
     </section>
   </header>
-  <main>
+  <main data-bs-spy="scroll" data-bs-target=".nav_list">
     <section class="banner">
       <div class="section-inner">
         <div class="light_eff">
@@ -2058,36 +2058,541 @@
         </div>
       </div>
     </section>
-    <section class="tabs_scroll">
+    <section class="tabs_scroll" id="tabs_scroll">
       <div class="section-inner">
         <div class="container">
           <div class="tab_scroll_layout">
-            <ul class="tabs">
+            <ul class="tabs" id="tabs_scroll_wrap">
               <li>
-                <button>Product Pages</button>
+                <a data-scroll="scroll_product" href="#scroll_product" class="control-scroll active">Product Pages</a>
               </li>
               <li>
-                <button>Inner Pages</button>
+                <a data-scroll="scroll_page" href="#scroll_page" class="control-scroll">Inner Pages</a>
               </li>
               <li>
-                <button>Portfolio</button>
+                <a data-scroll="scroll_portfolio" href="#scroll_portfolio" class="control-scroll">Portfolio</a>
               </li>
               <li>
-                <button>Shop Pages</button>
+                <a data-scroll="scroll_shop" href="#scroll_shop" class="control-scroll">Shop Pages</a>
               </li>
               <li>
-                <button>Blog Pages</button>
+                <a data-scroll="scroll_blog" href="#scroll_blog" class="control-scroll">Blog Pages</a>
               </li>
+
             </ul>
             <div class="scroll_layout_content">
-              <div class="wrapper">
-                <div class="inner">
+              <div class="bg_linear">
+                <img loading="lazy" src="./assets/images/tab_demos/bg_linear.svg" alt="">
+              </div>
+              <div class="wrapper" data-bs-spy="scroll" data-bs-target="#tabs_scroll_wrap" data-bs-smooth-scroll="true">
+
+                <div class="inner" id="scroll_product">
                   <div class="scroll_item">
                     <div class="item-inner">
-
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
                     </div>
                   </div>
                 </div>
+                <div class="inner" id="scroll_page">
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner" id="scroll_portfolio">
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner" id="scroll_shop">
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="inner" id="scroll_blog">
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                  <div class="scroll_item">
+                    <div class="item-inner">
+                      <div class="minisize">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="img_wrap">
+                        <div class="ratio" style="--aspect-ratioapt:417/294">
+                          <img loading="lazy" src="./assets/images/tab_demos/product/1.jpeg" alt="">
+                          <a href="#" target="_blank" class="full-width-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" target="_blank" class="title">Product Detail Layout 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="scroll_grabs">
+                <svg id="Layer_1" height="56" viewBox="0 0 91 91" width="56" xmlns="http://www.w3.org/2000/svg"
+                  data-name="Layer 1" fill="currentColor">
+                  <path d="m45.31 90a1.5 1.5 0 0 1 -1.5-1.5v-12.56a1.5 1.5 0 0 1 3 0v12.6a1.5 1.5 0 0 1 -1.5 1.46z" />
+                  <path
+                    d="m45.31 90a1.51 1.51 0 0 1 -1-.37l-8-7a1.5 1.5 0 0 1 2-2.26l8 7a1.51 1.51 0 0 1 .14 2.12 1.49 1.49 0 0 1 -1.14.51z" />
+                  <path
+                    d="m45.31 90a1.49 1.49 0 0 1 -1.13-.51 1.51 1.51 0 0 1 .14-2.12l8-7a1.5 1.5 0 0 1 2 2.26l-8 7a1.51 1.51 0 0 1 -1.01.37z" />
+                  <path d="m45.31 17a1.5 1.5 0 0 1 -1.5-1.5v-12.61a1.5 1.5 0 0 1 3 0v12.6a1.5 1.5 0 0 1 -1.5 1.51z" />
+                  <path
+                    d="m37.28 11.41a1.5 1.5 0 0 1 -1-2.63l8-7a1.5 1.5 0 1 1 2.02 2.22l-8 7a1.56 1.56 0 0 1 -1.02.41z" />
+                  <path d="m53.33 11.41a1.51 1.51 0 0 1 -1-.37l-8-7a1.5 1.5 0 0 1 2-2.26l8 7a1.5 1.5 0 0 1 -1 2.63z" />
+                  <path
+                    d="m50.24 69.55h-9.86a13.64 13.64 0 0 1 -13.63-13.62v-20.43a13.64 13.64 0 0 1 13.63-13.62h9.86a13.64 13.64 0 0 1 13.62 13.62v20.43a13.64 13.64 0 0 1 -13.62 13.62zm-9.86-44.67a10.64 10.64 0 0 0 -10.63 10.62v20.43a10.64 10.64 0 0 0 10.63 10.62h9.86a10.63 10.63 0 0 0 10.62-10.62v-20.43a10.63 10.63 0 0 0 -10.62-10.62z" />
+                  <path d="m45.31 42.58a1.5 1.5 0 0 1 -1.5-1.5v-6.71a1.5 1.5 0 0 1 3 0v6.71a1.5 1.5 0 0 1 -1.5 1.5z" />
+                </svg>
               </div>
             </div>
           </div>
@@ -2110,10 +2615,10 @@
 
         <a href="/"></a>
       </div>
-      <div class="nav_list_mb">
+      <div class="nav_list_mb nav_list">
         <ul>
           <li>
-            <a href="#" class="nav_link active">
+            <a href="#demos" class="nav_link">
               Demos
             </a>
           </li>
@@ -2174,9 +2679,11 @@
   <!-- End Modal, drawer, popup -->
   <!-- JAVA SCRIPT LIBRARY -->
   <script src="./assets/js/jquery.min.js" defer></script>
+  <script src="./assets/js/popper.min.js" defer></script>
   <script src="./assets/js/isotope.pkgd.min.js" defer></script>
   <script src="./assets/js/packery-mode.pkgd.min.js" defer></script>
   <script src="./assets/js/swiper-bundle.min.js" defer></script>
+  <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
   <script src="./assets/js/effect.js" defer></script>
   <script src="./assets/js/global.js" defer></script>
   <script src="./index.js" defer></script>

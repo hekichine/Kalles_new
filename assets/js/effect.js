@@ -91,7 +91,7 @@ class Effect extends HTMLElement {
     })
   }
   createChild() {
-    console.log("if > 3 item => Random color is running");
+    // console.log("if > 3 item => Random color is running");
     for (let i = 0; i < this.EffNum; i++) {
       if (i > 2) {
         // random position

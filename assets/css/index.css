@@ -1555,6 +1555,202 @@ section.topbar .hdt-icon-wrap::before {
   margin-bottom: 114px;
 }
 
+/* tabs demos scroll */
+.tabs_scroll .tab_scroll_layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs_scroll .tab_scroll_layout .tabs {
+  flex: 0 1 30%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs_scroll .tab_scroll_layout .tabs .control-scroll {
+  display: inline-flex;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -1.28px;
+  position: relative;
+  background: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0.22) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 22px 0;
+}
+
+.tabs_scroll .tab_scroll_layout .tabs .control-scroll.active {
+  background: var(--Linear, linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tabs_scroll .tab_scroll_layout .tabs .control-scroll.active::before {
+  position: absolute;
+  content: "";
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: url('/assets/images/tab_demos/button_active.svg');
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content {
+  flex: 0 1 65%
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper {
+
+  padding: 0 32px;
+  height: 80vh;
+  max-height: 850px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .bg_linear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: translateY(-20%);
+  pointer-events: none;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_grabs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_grabs svg {
+  animation: shake-animation 5s linear infinite;
+  transform-origin: 50% 50%;
+
+}
+
+/* width */
+/* width */
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content {
+  position: relative;
+  padding: 32px 0;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content::before {
+  z-index: -3;
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 32px 32px 0px 0px;
+
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content::after {
+  z-index: -2;
+  position: absolute;
+  content: "";
+  inset: 1px;
+  border-radius: 32px 32px 0px 0px;
+  background-color: #000;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 24px;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .inner+.inner {
+  margin-top: 40px;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .scroll_item {
+  flex: 0 1 auto;
+  width: calc(50% - 12px);
+  max-width: 50%;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner {
+  position: relative;
+  padding: 16px 16px 0;
+  text-align: center;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url('/assets/images/tab_demos/item_border.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  pointer-events: none;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .minisize {
+  line-height: 0;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .minisize span {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  display: inline-flex;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.32);
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .img_wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 @media (min-width: 1150px) {
 
   .demos_layout :where(.demo_demos, .demo_ec_demos),
@@ -1621,6 +1817,10 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 1670px) {
+  .tabs_scroll .tab_scroll_layout .tabs .control-scroll {
+    font-size: 40px;
+  }
+
   .banner .ffh-item {
 
     text-align: center;
@@ -1661,6 +1861,30 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 1149px) {
+  .tabs_scroll .tab_scroll_layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tabs_scroll .tab_scroll_layout .tabs {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scroll-snap-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .tabs_scroll .tab_scroll_layout .tabs .control-scroll {
+    white-space: nowrap;
+    font-size: 30px;
+
+  }
 
   .grid_demos .section-inner {
     margin-bottom: 50px;
@@ -1835,6 +2059,14 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 992px) {
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper {
+    height: 50vh;
+  }
+
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content .inner {
+    row-gap: 30px;
+  }
+
   .grid_demos .tophead .title {
     flex-direction: column;
     gap: 15px;
@@ -1880,6 +2112,24 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 @media (max-width: 767px) {
+  .tabs_scroll .tab_scroll_layout .tabs .control-scroll {
+    font-size: 24px;
+  }
+
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content .scroll_item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content::after,
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content::before {
+    border-radius: 16px;
+  }
+
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper {
+    padding: 0 15px;
+  }
+
   .grid_demos .section-inner {
     margin-bottom: 30px;
   }
