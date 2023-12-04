@@ -256,3 +256,64 @@ fill-text .text .highlight {
     transform: translate(0, 0)
   }
 }
+
+/* text circle */
+
+.rounded-text {
+  width: 25.625rem;
+  height: 25.625rem;
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  color: #fff;
+  font-weight: bold;
+  z-index: -1;
+  font-family: Raleway;
+}
+
+.white {
+  fill: #fff;
+}
+
+.yellow {
+  fill: #ffda2a;
+}
+
+.green {
+  fill: #00d3b9;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+
+@keyframes coloring {
+  0% {
+    fill: #fff;
+  }
+
+  35% {
+    fill: #ffda2a;
+  }
+
+  75% {
+    fill: #00d3b9;
+  }
+
+  100% {
+    fill: #fff;
+  }
+}
+
+.coloring {
+  animation: coloring 12s linear infinite;
+}
