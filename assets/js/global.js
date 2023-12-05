@@ -242,7 +242,7 @@ class customVideo extends HTMLElement {
 customElements.define('custom-video', customVideo)
 
 
-const options = {
+const revealOptions = {
   root: null,
   rootMargin: '0 0 -200px 0',
   threshold: 0
@@ -252,7 +252,7 @@ const connectIntersection = new IntersectionObserver((entries, observer) => {
     if (entry.isIntersecting) {
       revealInterView(entry.target);
     }
-  }, options)
+  }, revealOptions)
 });
 
 const reveals = document.querySelectorAll('[reveal]');
@@ -268,3 +268,23 @@ const revealInterView = (reveal) => {
   reveal.style.opacity = 1;
   reveal.style.transform = 'translateY(0)';
 }
+
+//  featured effect
+const featured = () => {
+
+  const sticky = document.querySelector('.featured .tophead .wrap .left');
+  const featured_wrapOptions = {
+    root: null,
+    rootMargin: '0px 0px 0px 0px',
+    threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+  }
+  const featured_wrapObserver = new IntersectionObserver((entries, observe) => {
+    entries.forEach(entry => {
+      console.log(entry);
+
+    })
+  }, featured_wrapOptions)
+
+  featured_wrapObserver.observe(document.querySelector('.featured #featured_packery'))
+}
+featured();

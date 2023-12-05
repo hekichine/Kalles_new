@@ -72,5 +72,15 @@ $(document).on('DOMContentLoaded', function () {
     layoutMode: 'packery',
     itemSelector: '.item'
   });
+  //  packery featured_packery
+  $('#booster_packery').isotope({
+    layoutMode: 'packery',
+    itemSelector: '.item'
+  });
+  //  packery featured_packery
+  $('#featured2_packery').isotope({
+    layoutMode: 'packery',
+    itemSelector: '.item'
+  });
 
 })
