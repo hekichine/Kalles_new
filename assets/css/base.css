@@ -556,9 +556,35 @@ drawer#menu_mobile {
     --bs-gutter-y: 24px;
   }
 
+  .col-xl-45 {
+    width: 36.666%;
+  }
+
+  .col-xl-55 {
+    width: 63.333%;
+  }
+
   .container {
     max-width: 1700px;
     padding: 0 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .col-2xl-45 {
+    width: 36.6666666%;
+  }
+
+  .col-2xl-55 {
+    width: 63.33333333%;
+  }
+
+  .col-2xl-6 {
+    width: 50%;
+  }
+
+  .col-2xl-4 {
+    width: 33.33333333%;
   }
 }
 
