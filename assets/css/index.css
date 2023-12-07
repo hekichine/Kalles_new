@@ -2398,6 +2398,27 @@ section.topbar .hdt-icon-wrap::before {
   max-height: 602px;
 }
 
+.fts2 .section-inner {
+  position: relative;
+
+
+}
+
+.fts2 .blur_bg {
+  position: absolute;
+  width: 50%;
+  max-height: 416px;
+  max-width: 416px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  border-radius: 416px;
+  background: #00C9FF;
+  filter: blur(353.6000061035156px);
+  z-index: -1;
+}
+
 @media (min-width: 1150px) {
 
   .demos_layout :where(.demo_demos, .demo_ec_demos),
