@@ -83,4 +83,23 @@ $(document).on('DOMContentLoaded', function () {
     itemSelector: '.item'
   });
 
+  // loadmore table
+  if (window.innerWidth > 1149) {
+    let rows = $('.tb_row').toArray();
+    let index0 = 0;
+    let in_space = 3;
+    $('.tb_row').hide();
+    $(rows.splice(index0, in_space)).show();
+    $(document).on('click', '.pm [table_loadmore]', function (e) {
+      e.preventDefault();
+      if (index0 < rows.length) {
+        $(rows.splice(index0, in_space)).slideDown();
+      } else {
+        $(this).hide();
+        $(this).parents('.pm').find('.container').addClass('loaded')
+      }
+
+    })
+  }
+
 })
