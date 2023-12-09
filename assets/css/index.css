@@ -2688,7 +2688,7 @@ section.topbar .hdt-icon-wrap::before {
   line-height: 1.4;
   margin-bottom: 0;
   margin-top: 32px;
-  z-index: 22;
+  z-index: 2;
   position: relative;
 }
 

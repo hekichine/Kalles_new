@@ -583,6 +583,14 @@ drawer#menu_mobile {
     width: 50%;
   }
 
+  .col-2xl-5 {
+    width: 41.333%;
+  }
+
+  .col-2xl-7 {
+    width: 58.666%;
+  }
+
   .col-2xl-4 {
     width: 33.33333333%;
   }
