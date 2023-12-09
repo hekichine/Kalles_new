@@ -90,7 +90,7 @@ $(document).on('DOMContentLoaded', function () {
     let in_space = 3;
     $('.tb_row').hide();
     $(rows.splice(index0, in_space)).show();
-    $(document).on('click', '.pm [table_loadmore]', function (e) {
+    $(document).on('click', '[table_loadmore]', function (e) {
       e.preventDefault();
       if (index0 < rows.length) {
         $(rows.splice(index0, in_space)).slideDown();
