@@ -329,5 +329,20 @@ fill-text .text .highlight {
     background-position: 100% 50%;
   }
 
+}
 
+@keyframes rl_s_loading {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.15;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0.15;
+  }
 }
