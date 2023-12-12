@@ -346,3 +346,80 @@ fill-text .text .highlight {
     opacity: 0.15;
   }
 }
+
+/*  animated border */
+.lip_bor {
+  --anime-time: 8s;
+  --box-size: 200px;
+  --clip-distance: 0.05;
+  --clip-size: calc((var(--box-size) * (1 + var(--clip-size) * 2)));
+  --path-width: 2px;
+  --main-color: #fff;
+}
+
+.lip_bor {
+  width: var(--box-size);
+  height: var(--box-size);
+  color: var(--main-color);
+  position: relative;
+}
+
+.lip_bor::before,
+.lip_bor::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  z-index: -1;
+  margin: calc(-1 * var(--clip-distance) * 100%);
+  animation: lip_bor var(--anime-time) linear infinite;
+  box-shadow: inset 0 0 0 var(--path-width);
+}
+
+.lip_bor::before {
+  animation-delay: calc(var(--anime-time) * -0.5);
+}
+
+.lip_bor:hover::before,
+.lip_bor:hover::after {
+  background-color: red;
+}
+
+@keyframes lip_bor1 {
+
+  0%,
+  100% {
+    clip: rect(0px, var(--clip-size), var(--path-width), 0px);
+  }
+
+  25% {
+    clip: rect(0px, var(--path-width), var(--clip-size), 0px);
+  }
+
+  50% {
+    clip: rect(calc(var(--clip-size) - var(--path-width)), calc(var(--clip-size), var(--clip-size)), 0px);
+  }
+
+  75% {
+    clip: rect(0px, var(--clip-size), var(--clip-size), var(--clip-size) - var(--path-width));
+  }
+}
+
+@keyframes lip_bor {
+
+  0%,
+  100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
