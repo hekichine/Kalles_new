@@ -345,3 +345,28 @@ const featured = () => {
   featured_wrapObserver.observe(document.querySelector('.featured #featured_packery'))
 }
 featured();
+
+
+// ============================
+// Partner section
+// ============================
+
+class partner extends HTMLElement {
+  constructor() {
+    super();
+    this.slider = this.querySelector('.pn_slider');
+
+    this.initSlider();
+
+  }
+  initSlider() {
+    const swiper = new Swiper(this.slider, {
+      loop: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  }
+}
+customElements.define('partner-custom', partner)
