@@ -355,18 +355,40 @@ class partner extends HTMLElement {
   constructor() {
     super();
     this.slider = this.querySelector('.pn_slider');
-
+    this.tabs = this.querySelectorAll('[partner-tab-item]');
+    if (!this.tabs) {
+      return;
+    }
     this.initSlider();
+    this.tabsAction();
 
   }
   initSlider() {
-    const swiper = new Swiper(this.slider, {
+    return new Swiper(this.slider, {
       loop: true,
+      // autoplay: {
+      //   delay: 0,
+      //   disableOnInteraction: false,
+      // },
+      // speed: 0,
+      // slidesPerView: 'auto',
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
     });
+  }
+  tabsAction() {
+    let self = this
+    self.tabs.forEach(el => {
+
+      el.addEventListener('click', () => {
+        self.querySelector('[partner-tab-item].active').classList.remove('active');
+        self.querySelector('.b_x_it.active').classList.remove('active')
+        el.classList.add('active');
+        self.querySelector(`${el.getAttribute('aria-controls')}`).classList.add('active')
+      })
+    })
   }
 }
 customElements.define('partner-custom', partner)
