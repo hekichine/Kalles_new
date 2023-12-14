@@ -423,3 +423,7 @@ fill-text .text .highlight {
     clip: rect(0px, 220px, 220px, 218px);
   }
 }
+
+.animated-trigger-inter {
+  transition: .5s linear;
+}
