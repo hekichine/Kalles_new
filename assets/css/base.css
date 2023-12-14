@@ -610,3 +610,8 @@ drawer#menu_mobile {
   width: 100px;
   height: 100px;
 }
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-white);
+  --bs-tooltip-color: var(--bs-black);
+}

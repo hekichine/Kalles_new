@@ -392,3 +392,4 @@ class partner extends HTMLElement {
   }
 }
 customElements.define('partner-custom', partner)
+

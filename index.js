@@ -102,4 +102,93 @@ $(document).on('DOMContentLoaded', function () {
     })
   }
 
+  // slider real live
+
+  let real_live_1 = new Swiper("#real_live_1", {
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+    slidesPerView: 3,
+    spaceBetween: 24,
+    speed: 10000,
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      525: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1600: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    }
+  });
+  let real_live_2 = new Swiper("#real_live_2", {
+    loop: true,
+    direction: 'horizontal',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      reverseDirection: true,
+      pauseOnMouseEnter: true
+    },
+    slidesPerView: 3,
+    spaceBetween: 24,
+    speed: 10000,
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      525: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1600: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    }
+  });
+
+
+  // video tes
+  var vid_tes = new Swiper(".t_swiper", {
+    effect: "slide",
+    loop: false,
+    effect: "flip",
+    grabCursor: true,
+    initialSlide: 1,
+    allowTouchMove: false,
+  });
+
+  $(document).on('click', '.vt button', function () {
+    $('.vt button.active').removeClass('active');
+    vid_tes.slideTo($(this).data("index"));
+    $(this).addClass('active')
+  })
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 })
