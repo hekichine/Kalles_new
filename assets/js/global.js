@@ -393,3 +393,30 @@ class partner extends HTMLElement {
 }
 customElements.define('partner-custom', partner)
 
+
+
+// ============================
+// back to top section
+// ============================
+
+class backTop extends HTMLElement {
+  constructor() {
+    super();
+    this.backtop();
+  }
+  backtop() {
+    let self = this;
+    window.addEventListener('scroll', function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        self.classList.add('show')
+      } else {
+        self.classList.remove('show')
+      }
+    });
+    self.addEventListener('click', function () {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    });
+  }
+}
+customElements.define('back-top', backTop); 

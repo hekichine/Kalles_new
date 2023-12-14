@@ -40,6 +40,7 @@
 
   --accent-color: #00BAD4;
   --second-color: #fff;
+
 }
 
 * {
@@ -614,4 +615,34 @@ drawer#menu_mobile {
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-white);
   --bs-tooltip-color: var(--bs-black);
+}
+
+back-top {
+  background-color: var(--link-hover);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+back-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+back-top:hover {
+  cursor: pointer;
+  background-color: var(--link-color);
+  color: var(--link-hover);
 }
