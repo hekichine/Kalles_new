@@ -255,7 +255,7 @@ class textTyping extends HTMLElement {
     this.textArray = [
       "Hello!",
       "Product customers want",
-      "Kalles landing x EcomRise"
+      "Kalles landing page"
       // Add more strings as needed
     ];
     // Set an interval to call the typeJs function

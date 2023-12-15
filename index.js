@@ -1,4 +1,6 @@
 $(document).on('DOMContentLoaded', function () {
+  // wowjs
+  new WOW().init();
   // topbar
   let swiperOptions = {
     speed: 10000,

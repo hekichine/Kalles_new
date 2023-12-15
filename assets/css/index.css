@@ -1984,9 +1984,15 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 .featured .tophead .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.featured .tophead .wrap.active {
+  background: rgba(255, 255, 255, .05);
+  border-radius: 24px;
+  padding: 20px 25px;
 }
 
 .featured .tophead .left {
@@ -3943,7 +3949,7 @@ section.topbar .hdt-icon-wrap::before {
 .kl_sp .res_w {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 24px;
 }
 
 .kl_sp :where(.team_preview, .res_info) {
