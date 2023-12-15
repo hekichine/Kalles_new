@@ -193,4 +193,7 @@ $(document).on('DOMContentLoaded', function () {
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+  // sticky featured
+  let header_height = $('header-custom').height();
+  $('.featured .box_sticky').attr('style', `--header-height: ${header_height + 80}px;`)
 })
