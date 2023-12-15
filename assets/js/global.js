@@ -311,7 +311,7 @@ class partner extends HTMLElement {
     if (!this.tabs) {
       return;
     }
-    this.initSlider();
+    // this.initSlider();
     this.tabsAction();
 
   }

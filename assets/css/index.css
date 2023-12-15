@@ -2867,6 +2867,14 @@ section.topbar .hdt-icon-wrap::before {
   position: relative;
 }
 
+/* ecomrise */
+.ecomrise .section-inner {
+  position: relative;
+  padding-top: 155px;
+  padding-bottom: 175px;
+}
+
+
 /* g_kl */
 .g_kl .section-inner {
   position: relative;
@@ -4219,11 +4227,14 @@ footer .content_wrap .ins_ec {
 }
 
 @media (min-width: 1150px) {
-  .g_kl .section-inner {
+
+  .g_kl .section-inner,
+  .ecomrise .section-inner {
     padding-left: 3%;
   }
 
-  .g_kl .container {
+  .g_kl .container,
+  .ecomrise .container {
     max-width: 1920px;
     padding: 0;
   }
@@ -4299,7 +4310,9 @@ footer .content_wrap .ins_ec {
 }
 
 @media (min-width: 1680px) {
-  .g_kl .section-inner {
+
+  .g_kl .section-inner,
+  .ecomrise .section-inner {
     padding-left: 8.3%;
   }
 
@@ -4661,7 +4674,8 @@ footer .content_wrap .ins_ec {
     padding-bottom: 70px;
   }
 
-  .g_kl .section-inner {
+  .g_kl .section-inner,
+  .ecomrise .section-inner {
     padding-top: 70px;
     padding-bottom: 70px;
   }
