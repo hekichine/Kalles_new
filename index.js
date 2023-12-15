@@ -195,5 +195,62 @@ $(document).on('DOMContentLoaded', function () {
 
   // sticky featured
   let header_height = $('header-custom').height();
-  $('.featured .box_sticky').attr('style', `--header-height: ${header_height + 80}px;`)
+
+  $('.featured .box_sticky').attr('style', `--header-height: ${header_height + window.innerWidth / 20}px;`);
+  // Lấy ra phần tử mục tiêu
+  let targetElement = document.querySelector('.b_t_i');
+  let thresholds = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+  // Khởi tạo Intersection Observer với một callback
+  let observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      // Khi phần tử mục tiêu nằm trong tầm nhìn
+      if (entry.isIntersecting) {
+        let scalex = entry.intersectionRatio;
+        let opacity = entry.intersectionRatio;
+        entry.target.style.opacity = opacity;
+        if (scalex <= 0.7) {
+          return
+        }
+        entry.target.style.transform = `scale(${entry.intersectionRatio})`;
+      }
+    });
+  }, { threshold: thresholds, rootMargin: '-50px 0px' }); // threshold 0.5 có nghĩa là khi ít nhất 50% của phần tử nằm trong tầm nhìn
+
+  // Bắt đầu theo dõi phần tử mục tiêu
+  observer.observe(targetElement);
+
+  let box_anime = () => {
+    const wrapper = document.getElementById('scrollWrapper');
+    const boxes = document.querySelectorAll('.box-text');
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+    };
+
+    const handleIntersection = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // When the wrapper is in view
+          let tranx = Math.floor(Math.random() * entry.intersectionRatio * 500);
+          boxes[0].style.transform = `translateX(${tranx}px)`;
+          boxes[1].style.transform = `translateX(-${tranx}px)`;
+          boxes[2].style.transform = 'scale(1.6)';
+          boxes[3].style.transform = `translateX(${tranx}px)`;
+          boxes[4].style.transform = `translateX(-${tranx}px)`;
+        } else {
+          boxes[0].style.transform = `translateX(0)`;
+          boxes[1].style.transform = `translateX(0)`;
+          boxes[2].style.transform = 'scale(0.6)';
+          boxes[3].style.transform = `translateX(0)`;
+          boxes[4].style.transform = `translateX(0)`;
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(wrapper);
+  }
+  box_anime();
 })
