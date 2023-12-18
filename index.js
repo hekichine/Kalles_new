@@ -98,7 +98,7 @@ $(document).on('DOMContentLoaded', function () {
         $(rows.splice(index0, in_space)).slideDown();
       } else {
         $(this).hide();
-        $(this).parents('.pm').find('.container').addClass('loaded')
+        $(this).parents('.pm').find('.container .table_content').addClass('loaded')
       }
 
     })
