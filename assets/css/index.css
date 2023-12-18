@@ -2870,10 +2870,48 @@ section.topbar .hdt-icon-wrap::before {
 /* ecomrise */
 .ecomrise .section-inner {
   position: relative;
-  padding-top: 155px;
-  padding-bottom: 175px;
+  padding-top: 0;
+  padding-bottom: 223px;
 }
 
+.ecomrise .title {
+  margin-bottom: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+}
+
+.ecomrise .list_fe {
+  list-style: none;
+  padding: 0;
+
+  margin-bottom: 64px;
+}
+
+.ecomrise .list_fe li {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.ecomrise .list_fe li svg {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 29px;
+}
+
+.ecomrise .list_fe li span {
+  flex: 0 1 auto;
+}
+
+.ecomrise .call_to_action .cta {
+  gap: 8px;
+}
 
 /* g_kl */
 .g_kl .section-inner {
@@ -4674,9 +4712,12 @@ footer .content_wrap .ins_ec {
     padding-bottom: 70px;
   }
 
-  .g_kl .section-inner,
-  .ecomrise .section-inner {
+  .g_kl .section-inner {
     padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .ecomrise .section-inner {
     padding-bottom: 70px;
   }
 
@@ -4926,6 +4967,16 @@ footer .content_wrap .ins_ec {
 }
 
 @media (max-width: 1024px) {
+
+  .ecomrise .title,
+  .ecomrise .list_fe {
+    margin-bottom: 40px;
+  }
+
+  .ecomrise .list_fe li {
+    margin-bottom: 25px;
+  }
+
   .vt .inner .des {
     font-size: 24px;
   }
@@ -5201,6 +5252,38 @@ footer .content_wrap .ins_ec {
 }
 
 @media (max-width: 767px) {
+  .ecomrise .list_fe li {
+    gap: 10px;
+  }
+
+  .ecomrise .section-inner {
+    padding-bottom: 40px;
+  }
+
+  .ecomrise .title,
+  .ecomrise .list_fe {
+    margin-bottom: 25px;
+  }
+
+  .ecomrise .list_fe li {
+    margin-bottom: 15px;
+  }
+
+  .featured .tophead .left .text-linear,
+  .featured .box_sticky .text-linear {
+    font-size: 50px;
+  }
+
+  .featured .b_t_i {
+    height: unset;
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .ecomrise .list_fe li {
+    font-size: 12px;
+  }
+
   footer .content_wrap h3 {
     font-size: 30px;
     letter-spacing: 0.5px;
