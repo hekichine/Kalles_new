@@ -528,7 +528,9 @@ fill-text .text .highlight {
   border-radius: 16px;
   background: #1A1B1F;
   overflow: hidden;
-  margin-bottom: 32px;
+  margin-bottom: 32px;display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom_modal .title {
@@ -576,7 +578,9 @@ fill-text .text .highlight {
   font-weight: 500;
   line-height: 1.4;
 }
-
+.custom_modal .ratio img{
+  object-fit: contain;
+}
 .custom_modal .m_b_kl {
   color: #000;
   font-size: 16px;

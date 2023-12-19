@@ -263,10 +263,12 @@ const modalPopup = ()=>{
     e.preventDefault();
     let parent = $(this).parents('[m-modal]');
     let pop_item={
+      ratio: parent.find('.ratio').attr('style'),
       img: parent.find('[m-img]').attr('src'),
       title: parent.find('[m-title]').html(),
       content: parent.find('[m-body]').html()
     }
+    console.log(pop_item);
     contentModal(pop_item);
     openModal('.custom_modal')
   });
@@ -281,6 +283,7 @@ const closeModal =(modal)=>{
   $(modal).removeClass('show');
 }
 const contentModal = (content)=>{
+  let ratio = $('.custom_modal').find('.ratio');
   let img = $('.custom_modal').find('img');
   let title = $('.custom_modal').find('.title');
   let body_content = $('.custom_modal').find('.m-body');
@@ -289,6 +292,7 @@ const contentModal = (content)=>{
     console.log("Modal: content is blank");
     return;
   }
+  // ratio.attr('style',content.ratio)
   img.attr('src',`${content.img}`);
   title.html(content.title);
   body_content.html(content.content);
