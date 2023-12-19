@@ -4191,14 +4191,15 @@ background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
 }
 
 .kl_sp .img_preview {
-  padding: 16px;
+  /* padding: 16px;
   border-radius: 24px;
-  position: relative;
+  position: relative; */
 }
 
 .kl_sp .img_preview::before {
   position: absolute;
   content: "";
+
   width: 1px;
   height: 150px;
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
@@ -4209,6 +4210,7 @@ background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
   will-change: opacity, top;
   top: 15%;
   opacity: 1;
+  display: none;
 }
 
 .kl_sp .img_preview::after {
@@ -4224,6 +4226,7 @@ background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
   will-change: opacity, bottom;
   bottom: 15%;
   opacity: 1;
+  display: none;
 }
 
 .kl_sp .minisize {
