@@ -4302,7 +4302,9 @@ footer .content_wrap .ins_ec {
   gap: 8px;
   align-items: center;
 }
-
+.demo_ec_demos{
+  display: none !important;
+}
 @media (min-width: 1150px) {
 
   .g_kl .section-inner,
@@ -4424,6 +4426,9 @@ footer .content_wrap .ins_ec {
 }
 
 @media (max-width: 1670px) {
+  .ecomrise .bg_blur{
+    left: 0;
+  }
   .fts2 .item12 .item-inner {
     gap: 20px;
     padding: 100px 30px;
@@ -5662,7 +5667,7 @@ footer .content_wrap .ins_ec {
   }
 
   .tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper {
-    padding: 0 15px;
+    padding: 0 ;
   }
 
   .grid_demos .section-inner {
