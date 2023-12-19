@@ -1245,30 +1245,7 @@ section.topbar .hdt-icon-wrap::before {
   position: relative;
 }
 
-.grid1 .item .grid1-btn {
-  display: inline-flex;
-  padding: 13px 11px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  background: var(--bg-32, rgba(32, 32, 32, 0.32));
 
-  /* bg blur 16 */
-  backdrop-filter: blur(8px);
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  opacity: 0;
-  visibility: hidden;
-  transition: .35s ease-in;
-}
-
-.grid1 .item .inner:hover .grid1-btn {
-  opacity: 1;
-  visibility: visible;
-}
 
 .grid1 .item4 .inner {
   background-image: url('/assets/images/grid1/item4.png');
@@ -2346,7 +2323,11 @@ section.topbar .hdt-icon-wrap::before {
 .fts2 .item .content {
   z-index: 1;
 }
-
+.fts2 .item9 .svg_bu{
+  position: absolute;
+  top: 50%;left: 0;right: 0;
+  transform: translateY(-20%);
+}
 .fts2 .item-inner h3.title {
   font-size: 24px;
   font-style: normal;
@@ -2928,7 +2909,11 @@ section.topbar .hdt-icon-wrap::before {
   background: linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%);
   filter: blur(231.4499969482422px);
 }
-
+.ecomrise .svg{
+  position: absolute;
+  left: 0;top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 /* g_kl */
 .g_kl .section-inner {
   position: relative;
@@ -3520,7 +3505,7 @@ section.topbar .hdt-icon-wrap::before {
 }
 
 .pn .heading .text-linear {
-  background: linear-gradient(81deg, #F253BA -2%, #FF6C80 29.96%, #FFF94F 63.99%);
+  background: linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3538,7 +3523,7 @@ section.topbar .hdt-icon-wrap::before {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(81deg, #F253BA -2%, #FF6C80 29.96%, #FFF94F 63.99%);
+  background: linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%);
 }
 
 .pn .heading .line.ll1::before {
@@ -3554,6 +3539,7 @@ section.topbar .hdt-icon-wrap::before {
 
   background: linear-gradient(136.74deg, rgba(255, 255, 255, 0.16) 4.33%, rgba(255, 255, 255, 0) 38.36%) border-box, linear-gradient(90deg, #000, #000) padding-box;
   border-radius: 12px;
+  overflow: hidden;
 
 
 }
@@ -4980,10 +4966,14 @@ footer .content_wrap .ins_ec {
   .grid1 .tophead {
     margin-bottom: 30px;
   }
+  .ecomrise .bg_blur{
+    left: 0;
+    transform: none;
+  }
 }
 
 @media (max-width: 1024px) {
-
+  
   .ecomrise .title,
   .ecomrise .list_fe {
     margin-bottom: 40px;

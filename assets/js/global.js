@@ -372,3 +372,7 @@ class backTop extends HTMLElement {
   }
 }
 customElements.define('back-top', backTop); 
+
+// ============================
+// custom modal
+// ============================

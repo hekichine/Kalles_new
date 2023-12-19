@@ -236,15 +236,15 @@ $(document).on('DOMContentLoaded', function () {
           let tranx = Math.floor(Math.random() * entry.intersectionRatio * 500);
           boxes[0].style.transform = `translateX(${tranx}px)`;
           boxes[1].style.transform = `translateX(-${tranx}px)`;
-          boxes[2].style.transform = 'scale(1.6)';
-          boxes[3].style.transform = `translateX(${tranx}px)`;
-          boxes[4].style.transform = `translateX(-${tranx}px)`;
+          // boxes[2].style.transform = 'scale(1.6)';
+          boxes[2].style.transform = `translateX(${tranx}px)`;
+          boxes[3].style.transform = `translateX(-${tranx}px)`;
         } else {
           boxes[0].style.transform = `translateX(0)`;
           boxes[1].style.transform = `translateX(0)`;
-          boxes[2].style.transform = 'scale(0.6)';
+          // boxes[2].style.transform = 'scale(0.6)';
+          boxes[2].style.transform = `translateX(0)`;
           boxes[3].style.transform = `translateX(0)`;
-          boxes[4].style.transform = `translateX(0)`;
         }
       });
     };
@@ -254,3 +254,43 @@ $(document).on('DOMContentLoaded', function () {
   }
   box_anime();
 })
+
+// ==================
+//    Modal popup
+// ==================
+const modalPopup = ()=>{
+  $(document).on('click','[m-modal] .box-popup_click',function(e){
+    e.preventDefault();
+    let parent = $(this).parents('[m-modal]');
+    let pop_item={
+      img: parent.find('[m-img]').attr('src'),
+      title: parent.find('[m-title]').html(),
+      content: parent.find('[m-body]').html()
+    }
+    contentModal(pop_item);
+    openModal('.custom_modal')
+  });
+  $(document).on('click','.custom_modal .overlay,.custom_modal .close-btn',function(){
+    closeModal('.custom_modal')
+  })
+}
+const openModal=(modal)=>{
+  $(modal).addClass('show');
+}
+const closeModal =(modal)=>{
+  $(modal).removeClass('show');
+}
+const contentModal = (content)=>{
+  let img = $('.custom_modal').find('img');
+  let title = $('.custom_modal').find('.title');
+  let body_content = $('.custom_modal').find('.m-body');
+
+  if(!content){
+    console.log("Modal: content is blank");
+    return;
+  }
+  img.attr('src',`${content.img}`);
+  title.html(content.title);
+  body_content.html(content.content);
+}
+modalPopup()
