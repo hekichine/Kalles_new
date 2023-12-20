@@ -1115,7 +1115,7 @@ fill-text .text .highlight {
 	border: 2px solid #555555;
 }
 
-.light_skew{
+.light_skew,.light_skew_hover{
   position: relative;
   overflow: hidden;
 }
@@ -1135,6 +1135,23 @@ fill-text .text .highlight {
   -webkit-animation: shine2 5s cubic-bezier(.01,.56,1,1) infinite;
           animation: shine2 5s cubic-bezier(.01,.56,1,1) infinite;
   opacity: 0.7;z-index: 1;
+}
+.light_skew_hover:hover::before{
+  background-image: -webkit-gradient(linear,left top, right top,from(transparent),color-stop(var(--accent-color)),to(transparent));
+  background-image: -o-linear-gradient(left,transparent,var(--accent-color),transparent);
+  background-image: linear-gradient(90deg,transparent,var(--accent-color),transparent);
+  content: "";
+  left: 150%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+  width: 200%;
+  -webkit-animation: shine2 5s cubic-bezier(.01,.56,1,1) infinite;
+          animation: shine2 5s cubic-bezier(.01,.56,1,1) infinite;
+  opacity: 0.7;
 }
 @-webkit-keyframes bghover {
   0% {
