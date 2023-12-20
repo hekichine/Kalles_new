@@ -60,14 +60,14 @@ $(document).on('DOMContentLoaded', function () {
     $(this).parents('ul').find('.control-scroll.active').removeClass('active');
     $(this).addClass('active')
   })
-  // scroll spy tabs_demos scroll
-  const nav = document.querySelector('#tabs_scroll_wrap');
-  const wrapper = document.querySelector('#tabs_scroll .wrapper')
-  const h = document.documentElement;
+  // // scroll spy tabs_demos scroll
+  // const nav = document.querySelector('#tabs_scroll_wrap');
+  // const wrapper = document.querySelector('#tabs_scroll .wrapper')
+  // const h = document.documentElement;
 
-  wrapper.addEventListener('scroll', function () {
-    nav.scrollTo(nav.querySelector('.active').offsetLeft - 50, 0);
-  });
+  // wrapper.addEventListener('scroll', function () {
+  //   nav.scrollTo(nav.querySelector('.active').offsetLeft - 50, 0);
+  // });
 
   //  packery featured_packery
   $('#featured_packery').isotope({
