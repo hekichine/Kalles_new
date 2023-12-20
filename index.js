@@ -196,7 +196,7 @@ $(document).on('DOMContentLoaded', function () {
   // sticky featured
   let header_height = $('header-custom').height();
 
-  // $('.featured .box_sticky').attr('style', `--header-height: ${header_height + window.innerWidth / 20}px;`);
+  $('.featured .box_sticky').attr('style', `--header-height: ${header_height + window.innerWidth / 20}px;`);
   // // Lấy ra phần tử mục tiêu
   // let targetElement = document.querySelector('.b_t_i');
   // let thresholds = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
@@ -217,7 +217,7 @@ $(document).on('DOMContentLoaded', function () {
   // }, { threshold: thresholds, rootMargin: '-50px 0px' }); // threshold 0.5 có nghĩa là khi ít nhất 50% của phần tử nằm trong tầm nhìn
 
   // Bắt đầu theo dõi phần tử mục tiêu
-  observer.observe(targetElement);
+  // observer.observe(targetElement);
 
   let box_anime = () => {
     const wrapper = document.getElementById('scrollWrapper');

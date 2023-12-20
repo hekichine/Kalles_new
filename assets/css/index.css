@@ -49,6 +49,9 @@ section.topbar .hdt-icon-wrap::before {
   filter: blur(19px);
   z-index: -1;
 }
+.topbar .tb_open{
+  text-decoration: underline;
+}
 
 .topbar .swiper {
   overflow: hidden;
@@ -493,7 +496,7 @@ section.topbar .hdt-icon-wrap::before {
   max-width: 236px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 34px;
 
 }
 
@@ -869,7 +872,12 @@ section.topbar .hdt-icon-wrap::before {
   max-width: 220px;
   width: 220px;
   margin-bottom: 24px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
 }
+
+
 
 .banner custom-video {
   display: block;
@@ -4504,8 +4512,33 @@ footer .bg_blur {
   }
 
 }
+@media (min-width: 1400px) and (max-width: 1660px){
+  .banner .col-top{
+    padding: 0 20px;
+    gap: 15px;
+  }
+  .banner .ffh-item{
+    max-width: 40%;
+  }
+  .banner .ffy-item{
+    max-width: calc(100% - 40% - 15px);
+  }
+  .banner .heading-top{
+    font-size: calc(40px * 0.6);
 
+  }
+  .banner .heading-bot{
+    font-size: calc(80px * 0.6);    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+  .banner .des{
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 1670px) {
+ 
+
+
   .ecomrise .bg_blur {
     left: 0;
   }
@@ -4555,19 +4588,6 @@ footer .bg_blur {
     font-size: 40px;
   }
 
-  .banner .ffh-item {
-
-    text-align: center;
-  }
-
-  .banner .col-top {
-    justify-content: center;
-    margin-bottom: 130px;
-  }
-
-  .banner .col-bot {
-    margin-bottom: 120px;
-  }
 
 }
 
@@ -4766,6 +4786,20 @@ footer .bg_blur {
 }
 
 @media (max-width: 1400px) {
+
+  .banner .ffh-item {
+
+    text-align: center;
+  }
+
+  .banner .col-top {
+    justify-content: center;
+    margin-bottom: 130px;
+  }
+
+  .banner .col-bot {
+    margin-bottom: 120px;
+  }
   .pn .b_w {
     padding: 0;
     background: none;
