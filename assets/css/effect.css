@@ -1149,7 +1149,7 @@ fill-text .text .highlight {
   -ms-transform: skew(-20deg);
   transform: skew(-20deg);
   width: 200%;
-  -webkit-animation: shine2 5s cubic-bezier(.01, .56, 1, 1) infinite;
+  -webkit-animation: shine2 7s cubic-bezier(.01, .56, 1, 1) infinite;
   animation: shine2 5s cubic-bezier(.01, .56, 1, 1) infinite;
   opacity: 0.7;
   z-index: 1;

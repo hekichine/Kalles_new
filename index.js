@@ -268,7 +268,7 @@ const modalPopup = () => {
       title: parent.find('[m-title]').html(),
       content: parent.find('[m-body]').html()
     }
-    console.log(pop_item);
+    // console.log(pop_item);
     contentModal(pop_item);
     openModal('.custom_modal')
   });
