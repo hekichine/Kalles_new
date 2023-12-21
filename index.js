@@ -70,10 +70,10 @@ $(document).on('DOMContentLoaded', function () {
   // });
 
   //  packery featured_packery
-  $('#featured_packery').isotope({
-    layoutMode: 'packery',
-    itemSelector: '.item'
-  });
+  // $('#featured_packery').isotope({
+  //   layoutMode: 'packery',
+  //   itemSelector: '.item'
+  // });
   //  packery featured_packery
   $('#booster_packery').isotope({
     layoutMode: 'packery',
@@ -196,7 +196,7 @@ $(document).on('DOMContentLoaded', function () {
   // sticky featured
   let header_height = $('header-custom').height();
 
-  $('.featured .box_sticky').attr('style', `--header-height: ${header_height + window.innerWidth / 20}px;`);
+  $('.featured .box_sticky').attr('style', `--header-height: ${header_height}px;`);
   // // Lấy ra phần tử mục tiêu
   // let targetElement = document.querySelector('.b_t_i');
   // let thresholds = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
@@ -305,7 +305,7 @@ modalPopup()
 
 const openPopupLink = () => {
   let flag = false;
-  
+
   $(document).on('click', '[openPopupLink] a', function (e) {
     if (flag == true) {
       return;
@@ -313,7 +313,7 @@ const openPopupLink = () => {
     e.preventDefault();
     let url = $(this).attr('href');
     $('password-popup').addClass('open');
-    $('password-popup button.view_now').attr('data-location',url);
+    $('password-popup button.view_now').attr('data-location', url);
     flag = true;
   })
 }
