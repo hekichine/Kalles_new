@@ -258,11 +258,11 @@ $(document).on('DOMContentLoaded', function () {
 // ==================
 //    Modal popup
 // ==================
-const modalPopup = ()=>{
-  $(document).on('click','[m-modal] .box-popup_click',function(e){
+const modalPopup = () => {
+  $(document).on('click', '[m-modal] .box-popup_click', function (e) {
     e.preventDefault();
     let parent = $(this).parents('[m-modal]');
-    let pop_item={
+    let pop_item = {
       ratio: parent.find('.ratio').attr('style'),
       img: parent.find('[m-img]').attr('src'),
       title: parent.find('[m-title]').html(),
@@ -272,29 +272,51 @@ const modalPopup = ()=>{
     contentModal(pop_item);
     openModal('.custom_modal')
   });
-  $(document).on('click','.custom_modal .overlay,.custom_modal .close-btn',function(){
+  $(document).on('click', '.custom_modal .overlay,.custom_modal .close-btn', function () {
     closeModal('.custom_modal')
   })
 }
-const openModal=(modal)=>{
+const openModal = (modal) => {
   $(modal).addClass('show');
 }
-const closeModal =(modal)=>{
+const closeModal = (modal) => {
   $(modal).removeClass('show');
 }
-const contentModal = (content)=>{
+const contentModal = (content) => {
   let ratio = $('.custom_modal').find('.ratio');
   let img = $('.custom_modal').find('img');
   let title = $('.custom_modal').find('.title');
   let body_content = $('.custom_modal').find('.m-body');
 
-  if(!content){
+  if (!content) {
     console.log("Modal: content is blank");
     return;
   }
   // ratio.attr('style',content.ratio)
-  img.attr('src',`${content.img}`);
+  img.attr('src', `${content.img}`);
   title.html(content.title);
   body_content.html(content.content);
 }
 modalPopup()
+
+// ==================
+//    open popup link
+// ==================
+
+const openPopupLink = () => {
+  let flag = false;
+  
+  $(document).on('click', '[openPopupLink] a', function (e) {
+    if (flag == true) {
+      return;
+    }
+    e.preventDefault();
+    let url = $(this).attr('href');
+    $('password-popup').addClass('open');
+    $('password-popup button.view_now').attr('data-location',url);
+    flag = true;
+  })
+}
+
+
+openPopupLink();
