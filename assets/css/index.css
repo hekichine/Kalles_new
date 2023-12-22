@@ -5521,6 +5521,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 1600px) {
+  .banner .ffy-item .ffy-inner::before{
+    background: #6c757d47;
+  }
   .pn .pn-flex .it{
     max-width: 320px;
   }
