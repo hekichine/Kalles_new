@@ -118,7 +118,7 @@ a {
   -webkit-transition: .35s linear;
   -o-transition: .35s linear;
   transition: .35s linear;
-  pointer-events: auto !important;
+  pointer-events: auto;
   cursor: pointer;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 }
 
 button {
-  pointer-events: auto !important;
+  pointer-events: auto;
   cursor: pointer;
 }
 

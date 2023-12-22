@@ -19,8 +19,6 @@ effect-custom [effect-parent] {
   bottom: 0;
   pointer-events: none;
   overflow: hidden;
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
 }
 
 effect-custom [effect-parent] span {
@@ -1229,10 +1227,12 @@ password-popup {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  visibility: hidden;
 }
 
 password-popup.open {
   pointer-events: auto;
+  visibility: visible;
 }
 
 password-popup .overlay {
@@ -1292,4 +1292,8 @@ password-popup .view_now {
   border-radius: 24px;
   margin: 20px auto;
   color: #fff;
+}
+password-popup span{
+    color: #7b7b93;
+    font-weight: 300;
 }
