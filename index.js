@@ -299,18 +299,17 @@ modalPopup()
 //    open popup link
 // ==================
 
-let flag = false;
 const openPopupLink = () => {
 
   $(document).on('click', '[openPopupLink] a', function (e) {
-    if (flag == true) {
+    e.preventDefault();
+    if($(this).hasClass('clicked')){
       return;
     }
-    e.preventDefault();
     let url = $(this).attr('href');
     $('password-popup').addClass('open');
     $('password-popup button.view_now').attr('data-location', url);
-    flag = true;
+    $('[openPopupLink] a').addClass('clicked');
   })
 }
 
