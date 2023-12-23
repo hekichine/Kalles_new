@@ -300,19 +300,12 @@ modalPopup()
 // ==================
 
 const openPopupLink = () => {
-  let flag = false;
-
   $(document).on('click', '[openPopupLink] a', function (e) {
-    if (flag == true) {
-      return;
-    }
     e.preventDefault();
     let url = $(this).attr('href');
     $('password-popup').addClass('open');
     $('password-popup button.view_now').attr('data-location', url);
-    flag = true;
   })
 }
 
-
-// openPopupLink();
+openPopupLink();
