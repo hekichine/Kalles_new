@@ -89,18 +89,14 @@ $(document).on('DOMContentLoaded', function () {
   if (window.innerWidth > 1149) {
     let rows = $('.tb_row').toArray();
     let index0 = 0;
-    let in_space = 3;
+    let in_space = 5;
     $('.tb_row').hide();
     $(rows.splice(index0, in_space)).show();
     $(document).on('click', '[table_loadmore]', function (e) {
       e.preventDefault();
-      if (index0 < rows.length) {
-        $(rows.splice(index0, 300)).slideDown();
-      } else {
-        $(this).hide();
-        $(this).parents('.pm').find('.container .table_content').addClass('loaded')
-      }
-
+      $(rows.splice(index0, 300)).slideDown();
+      $(this).hide();
+      $(this).parents('.pm').find('.container .table_content').addClass('loaded')
     })
   }
 

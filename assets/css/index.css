@@ -2058,7 +2058,10 @@ section.topbar .storm svg {
   margin-bottom: 14px;
   position: relative;
 }
-
+.demos_layout effect-custom{
+border-radius: 8px;
+overflow: hidden;
+}
 .demos_layout .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2118,9 +2121,6 @@ section.topbar .storm svg {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2133,6 +2133,10 @@ section.topbar .storm svg {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: fit-content;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 90px;
 }
 
 .tabs_scroll .tab_scroll_layout .tabs .control-scroll {
@@ -4856,9 +4860,7 @@ section.topbar .storm svg {
 .kl_sp .section-inner {
   position: relative;
   padding: 128px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
-  background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
-  background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+
 }
 
 .kl_sp .bg_blur {

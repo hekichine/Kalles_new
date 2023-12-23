@@ -9,6 +9,7 @@ effect-custom {
   position: relative;
   height: 100%;
   display: inline-block;
+  border-radius: 8px;
 }
 
 effect-custom [effect-parent] {
@@ -19,6 +20,7 @@ effect-custom [effect-parent] {
   bottom: 0;
   pointer-events: none;
   overflow: hidden;
+  border-radius: inherit;
 }
 
 effect-custom [effect-parent] span {
