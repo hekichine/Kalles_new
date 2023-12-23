@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
 * Prefixed by:
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
@@ -32,12 +39,14 @@ section.topbar .hdt-icon-wrap .hdt-icon {
 }
 
 section.topbar .fire svg {
-  filter: drop-shadow(0px 0px 1.188px #F64B2C) drop-shadow(0px 0px 2.376px #F64B2C) drop-shadow(0px 0px 8.316px #F64B2C);
+  -webkit-filter: drop-shadow(0px 0px 1.188px #F64B2C) drop-shadow(0px 0px 2.376px #F64B2C) drop-shadow(0px 0px 8.316px #F64B2C);
+          filter: drop-shadow(0px 0px 1.188px #F64B2C) drop-shadow(0px 0px 2.376px #F64B2C) drop-shadow(0px 0px 8.316px #F64B2C);
 
 }
 
 section.topbar .storm svg {
-  filter: drop-shadow(0px 0px 1.836px #F5C413) drop-shadow(0px 0px 3.672px #F5C413) drop-shadow(0px 0px 12.852px #F5C413);
+  -webkit-filter: drop-shadow(0px 0px 1.836px #F5C413) drop-shadow(0px 0px 3.672px #F5C413) drop-shadow(0px 0px 12.852px #F5C413);
+          filter: drop-shadow(0px 0px 1.836px #F5C413) drop-shadow(0px 0px 3.672px #F5C413) drop-shadow(0px 0px 12.852px #F5C413);
 }
 
 .topbar .tb_open {
@@ -127,7 +136,9 @@ section.topbar .storm svg {
 */
 header-custom {
   opacity: 0;
-  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 header-custom.open {
@@ -326,7 +337,11 @@ header-custom.open {
 }
 
 .header header-custom {
+  -webkit-transition: top .15s ease, opacity .25s ease-in-out, background-color .25s linear, -webkit-transform .25s ease-in;
+  transition: top .15s ease, opacity .25s ease-in-out, background-color .25s linear, -webkit-transform .25s ease-in;
+  -o-transition: top .15s ease, opacity .25s ease-in-out, background-color .25s linear, transform .25s ease-in;
   transition: top .15s ease, opacity .25s ease-in-out, background-color .25s linear, transform .25s ease-in;
+  transition: top .15s ease, opacity .25s ease-in-out, background-color .25s linear, transform .25s ease-in, -webkit-transform .25s ease-in;
   will-change: top, opacity, background-color, transform;
 }
 
@@ -457,8 +472,8 @@ header-custom.open {
   content: "";
   width: 1px;
   height: 26px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 60%;
   left: -1px;
@@ -481,8 +496,8 @@ header-custom.open {
   content: "";
   width: 1px;
   height: 26px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 60%;
   right: -1px;
@@ -585,8 +600,8 @@ header-custom.open {
   padding: 20px;
   border-radius: 16px;
   border: 0.5px solid rgba(255, 255, 255, 0.06);
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
   -webkit-backdrop-filter: blur(64px);
   backdrop-filter: blur(64px);
@@ -976,8 +991,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 250px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 80%;
   left: -12px;
@@ -993,8 +1008,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 250px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 80%;
   right: -12px;
@@ -1034,8 +1049,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 10%;
   left: 1px;
@@ -1052,8 +1067,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 40%;
   right: 1px;
@@ -1110,8 +1125,8 @@ line-height: 1.4;
   content: "";
   inset: 0;
   border-radius: inherit;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
 }
 
@@ -1142,7 +1157,8 @@ line-height: 1.4;
   font-weight: 500;
   line-height: 1.4;
   /* 22.4px */
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-bottom: 25px;
 }
 
@@ -1499,8 +1515,6 @@ line-height: 1.4;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 56px;
   padding: 0 15px;
@@ -1772,8 +1786,8 @@ line-height: 1.4;
   bottom: 0;
   left: 0;
   border-radius: 16px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24)));
   background: -o-linear-gradient(left, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%);
   z-index: -2;
 }
@@ -1851,7 +1865,9 @@ line-height: 1.4;
   gap: 32px;
   margin-bottom: 40px;
   font-size: 72px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid_demos .tophead .title .text-linear {
@@ -1960,8 +1976,8 @@ line-height: 1.4;
   border-radius: 16px;
   position: relative;
   padding: 16px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
@@ -1974,8 +1990,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 60%;
   left: -1px;
@@ -1991,8 +2007,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 180px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 60%;
   right: -1px;
@@ -2142,6 +2158,8 @@ line-height: 1.4;
   list-style: none;
   margin: 0;
   padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   position: sticky;
   position: -webkit-sticky;
@@ -2157,8 +2175,8 @@ line-height: 1.4;
   line-height: 1.4;
   letter-spacing: -1.28px;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(255, 255, 255, 0.22)));
   background: -o-linear-gradient(top, #000 0%, rgba(255, 255, 255, 0.22) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(255, 255, 255, 0.22)));
   background: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0.22) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -2224,7 +2242,9 @@ line-height: 1.4;
   -ms-flex-pack: center;
   justify-content: center;
   pointer-events: none;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .tabs_scroll .tab_scroll_layout .scroll_grabs svg {
@@ -2269,8 +2289,8 @@ line-height: 1.4;
   position: absolute;
   content: "";
   inset: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#36E6CC), color-stop(69.39%, #C32BF8), to(rgba(0, 0, 0, 0)));
   background: -o-linear-gradient(top, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#36E6CC), color-stop(69.39%, #C32BF8), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%);
   border-radius: 32px 32px 0px 0px;
 
@@ -2857,8 +2877,8 @@ line-height: 1.4;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -6px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.72)), to(rgba(255, 255, 255, 0.03)));
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.03) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.72)), to(rgba(255, 255, 255, 0.03)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.03) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -2890,10 +2910,10 @@ line-height: 1.4;
 .cs_s .noty {
 
   padding: 24px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
-    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24))) border-box;
   background: -o-linear-gradient(#000, #000) padding-box,
     -o-linear-gradient(left, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%) border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24))) border-box;
   background: linear-gradient(#000, #000) padding-box,
     linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%) border-box;
   border-radius: 16px;
@@ -2954,7 +2974,9 @@ line-height: 1.4;
 }
 .fts2 .content .stock_svg{
   position: absolute;bottom: 0;left: 50%;right: 0;
-  transform: translateY(90%) translateX(-20%);
+  -webkit-transform: translateY(90%) translateX(-20%);
+      -ms-transform: translateY(90%) translateX(-20%);
+          transform: translateY(90%) translateX(-20%);
 }
 .fts2 .item1 .content {
   text-align: center;
@@ -3146,8 +3168,8 @@ line-height: 1.4;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -5.2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.72)), to(rgba(255, 255, 255, 0.00)));
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.72)), to(rgba(255, 255, 255, 0.00)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.00) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -3272,8 +3294,8 @@ line-height: 1.4;
 
 .pm .tb_ct {
   padding: 48px 48px 0 48px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#36E6CC), color-stop(69.39%, #C32BF8), to(rgba(0, 0, 0, 0))) border-box;
   background: -o-linear-gradient(bottom, #000, #000) padding-box, -o-linear-gradient(top, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%) border-box;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#36E6CC), color-stop(69.39%, #C32BF8), to(rgba(0, 0, 0, 0))) border-box;
   background: linear-gradient(0deg, #000, #000) padding-box, linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%) border-box;
   border-radius: 24px 24px 0 0;
   border: 1px solid transparent;
@@ -3367,8 +3389,8 @@ line-height: 1.4;
   bottom: 0;
   left: 0;
   right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(33.58%, rgba(0, 0, 0, 0.00)), color-stop(89.1%, #000), to(#000)), rgba(0, 0, 0, 0.06);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.00) 33.58%, #000 89.1%, #000 100%), rgba(0, 0, 0, 0.06);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33.58%, rgba(0, 0, 0, 0.00)), color-stop(89.1%, #000), to(#000)), rgba(0, 0, 0, 0.06);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 33.58%, #000 89.1%, #000 100%), rgba(0, 0, 0, 0.06);
   z-index: 2;
   pointer-events: none;
@@ -3696,11 +3718,11 @@ line-height: 1.4;
 .g_kl .claim {
   border: 0.5px solid transparent;
 
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
-    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24))) border-box;
-
   background: -o-linear-gradient(#000, #000) padding-box,
     -o-linear-gradient(left, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%) border-box;
+
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24))) border-box;
 
   background: linear-gradient(#000, #000) padding-box,
     linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%) border-box;
@@ -3794,11 +3816,11 @@ line-height: 1.4;
   padding: 56px 48px;
   border: 0.5px solid transparent;
 
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
-    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24))) border-box;
-
   background: -o-linear-gradient(#000, #000) padding-box,
     -o-linear-gradient(left, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%) border-box;
+
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.24)), color-stop(30.42%, rgba(255, 255, 255, 0)), color-stop(69.5%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.24))) border-box;
 
   background: linear-gradient(#000, #000) padding-box,
     linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%) border-box;
@@ -4029,15 +4051,15 @@ line-height: 1.4;
   transform: translateX(100%);
   -webkit-animation: rl_s_loading 2s infinite;
   animation: rl_s_loading 2s infinite;
+  background: -o-linear-gradient(left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(125, 185, 232, 0) 100%);
   background: -webkit-gradient(linear,
       left top, right top,
       from(rgba(255, 255, 255, 0)),
       color-stop(50%, rgba(255, 255, 255, 0.2)),
       to(rgba(125, 185, 232, 0)));
-  background: -o-linear-gradient(left,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(125, 185, 232, 0) 100%);
   background: linear-gradient(to right,
       rgba(255, 255, 255, 0) 0%,
       rgba(255, 255, 255, 0.2) 50%,
@@ -4141,7 +4163,9 @@ line-height: 1.4;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 15px;
@@ -4156,8 +4180,8 @@ line-height: 1.4;
 }
 
 .s_vv .content .s_v_i {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0))) padding-box, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.16)), to(rgba(255, 255, 255, 0))) border-box;
   background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0) 100%) padding-box, -o-linear-gradient(top, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%) border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0))) padding-box, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.16)), to(rgba(255, 255, 255, 0))) border-box;
   background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0) 100%) padding-box, linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%) border-box;
   border: 0.5px solid transparent;
   padding: 16px;
@@ -4196,10 +4220,10 @@ line-height: 1.4;
 }
 
 .pn .b_w {
-  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000)) padding-box,
-    -webkit-gradient(linear, left top, left bottom, from(#36E6CC), color-stop(69.39%, #C32BF8), to(rgba(0, 0, 0, 0))) border-box;
   background: -o-linear-gradient(bottom, #000, #000) padding-box,
     -o-linear-gradient(top, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%) border-box;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear, left top, left bottom, from(#36E6CC), color-stop(69.39%, #C32BF8), to(rgba(0, 0, 0, 0))) border-box;
   background: linear-gradient(0deg, #000, #000) padding-box,
     linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%) border-box;
   border-radius: 24px 24px 0 0;
@@ -4210,8 +4234,8 @@ line-height: 1.4;
 
 .pn .ct_w {
   padding: 16px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
   border-radius: 16px;
   display: -webkit-box;
@@ -4411,8 +4435,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 26px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 60%;
   left: -1px;
@@ -4428,8 +4452,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 26px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 60%;
   right: -1px;
@@ -4624,8 +4648,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 60%;
   left: -1px;
@@ -4641,8 +4665,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 60%;
   right: -1px;
@@ -4755,8 +4779,8 @@ line-height: 1.4;
 
 .vt custom-video::before {
   border-radius: 24px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: -o-linear-gradient(top, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.00)));
   background: linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
   position: absolute;
   content: "";
@@ -5160,8 +5184,8 @@ line-height: 1.4;
 
   width: 1px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 60%;
   left: -1px;
@@ -5180,8 +5204,8 @@ line-height: 1.4;
   content: "";
   width: 1px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 60%;
   right: -1px;
@@ -5593,7 +5617,9 @@ footer .bg_blur {
   }
 
   .s_vv .ct_w .content {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .banner .ffy-item .ffy-inner::before {
@@ -6608,6 +6634,21 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
+  #tabs_scroll_wrap{
+    display: none;
+  }
+  .grid1 .item2 .groups_sale{
+    padding: 0;
+  }
+  .grid1 .item2 .ffks{
+    font-size: 12px;
+  }
+  .grid1 .item2 .groups_sale :where(.sale1, .sale2){
+    gap: 3px;
+  }
+  .grid1 .grid_wrap::before{
+    display: none;
+  }
   .pm .tophead h4 span,footer .content_wrap h4{
     font-size: 14px;
   }
@@ -7102,7 +7143,7 @@ footer .bg_blur {
   }
 
   .grid1 .item .inner {
-    min-height: 300px;
+    min-height: 350px;
   }
 
   .banner .video_content {

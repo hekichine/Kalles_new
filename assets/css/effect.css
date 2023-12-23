@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
 * Prefixed by:
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
@@ -224,7 +231,6 @@ fill-text {
 }
 
 fill-text .fill-inner {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 300px;
@@ -1159,8 +1165,8 @@ fill-text .text .highlight {
 }
 
 .light_skew::before {
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(var(--accent-color)), to(transparent));
   background-image: -o-linear-gradient(left, transparent, var(--accent-color), transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(var(--accent-color)), to(transparent));
   background-image: linear-gradient(90deg, transparent, var(--accent-color), transparent);
   content: "";
   left: 150%;
@@ -1178,8 +1184,8 @@ fill-text .text .highlight {
 }
 
 .light_skew_hover:hover::before {
-  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(var(--accent-color)), to(transparent));
   background-image: -o-linear-gradient(left, transparent, var(--accent-color), transparent);
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(var(--accent-color)), to(transparent));
   background-image: linear-gradient(90deg, transparent, var(--accent-color), transparent);
   content: "";
   left: 150%;
@@ -1247,9 +1253,15 @@ password-popup {
   position: fixed;
   inset: 0;
   z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   pointer-events: none;
   visibility: hidden;
 }
@@ -1263,8 +1275,11 @@ password-popup .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.48);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
   transition: opacity .2s ease-in;
   will-change: opacity;
 }
@@ -1279,6 +1294,8 @@ password-popup .content {
   max-width: 570px;
   width: 95%;
   opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
   transition: opacity .2s ease-in;
   will-change: opacity;
 }
@@ -1330,8 +1347,8 @@ password-popup span{
   content: "";
   width: 1px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   top: 60%;
   left: -1px;
@@ -1346,8 +1363,8 @@ password-popup span{
   content: "";
   width: 1px;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
   bottom: 60%;
   right: -1px;

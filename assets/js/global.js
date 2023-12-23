@@ -32,15 +32,15 @@ class Header extends HTMLElement {
       return
     }
     this.cta_mb.addEventListener('click', () => {
-      this.cta_mb.classList.toggle('open');
+      // this.cta_mb.classList.toggle('open');
       this.menu_mobile.classList.toggle('open')
     })
     overlay.addEventListener('click', () => {
-      this.cta_mb.classList.toggle('open');
+      // this.cta_mb.classList.toggle('open');
       this.menu_mobile.classList.toggle('open')
     })
     this.cta_close_mobile.addEventListener('click', () => {
-      this.cta_mb.classList.toggle('open');
+      // this.cta_mb.classList.toggle('open');
       this.menu_mobile.classList.toggle('open')
     })
 
