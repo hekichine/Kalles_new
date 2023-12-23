@@ -4969,6 +4969,7 @@ line-height: 1.4;
   -ms-flex-align: center;
   align-items: center;
   gap: 4px;
+  margin-bottom: 56px;
 }
 
 .kl_sp :where(.team_preview, .res_info) {
@@ -5126,7 +5127,7 @@ line-height: 1.4;
   display: -ms-flexbox;
   display: flex;
   padding: 4px 6px;
-  height: 15px;
+  height: 16px;
   width: 28px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -5618,6 +5619,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 1440px) {
+  .kl_sp .res_w{
+    margin-bottom: 30px;
+  }
   .pm .tophead h4 span,footer .content_wrap h4{
     font-size: 24px;
   }
@@ -6233,6 +6237,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 1024px) {
+  .kl_sp .res_w{
+    margin-bottom: 20px;
+  }
   .fts2 .content .stock_svg{
     display: none;
   }
