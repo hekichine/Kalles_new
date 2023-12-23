@@ -958,10 +958,13 @@ line-height: 1.4;
 .banner .ffy-item .visible-mb {
   display: none;
 }
+.banner .power_lite{
+  margin-top: auto;
+  margin-bottom: 40px;
+}
 
 .banner .ffy-item .tabs_list {
   margin-top: 55px;
-  margin-bottom: 40px;
 }
 
 .banner .effect_boder {
