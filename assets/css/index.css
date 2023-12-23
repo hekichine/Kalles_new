@@ -3515,12 +3515,10 @@ line-height: 1.4;
   content: "";
   inset: -1px;
   border-radius: 16px;
-  background: -o-linear-gradient(350deg, #00BAD4 7.72%, red 100%);
-  background: linear-gradient(100deg, #00BAD4 7.72%, red 100%);
-  -webkit-filter: blur(13.619377136230469px);
+  background:  linear-gradient(100deg, #00BAD4 7.72%, #2194FF 118.76%);
   filter: blur(13.619377136230469px);
-  background-size: 400% 400%;
   overflow: hidden;
+  z-index: -1;
 }
 
 .pm .tb_ct .total {
