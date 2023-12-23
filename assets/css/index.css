@@ -5556,6 +5556,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 1600px) {
+  .grid1 .grid_wrap{
+    padding: 0;
+  }
   .ecomrise .title {
     font-size: calc(48px * .75);
     margin-bottom: 30px;
