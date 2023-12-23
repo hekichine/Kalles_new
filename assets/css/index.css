@@ -5910,6 +5910,9 @@ footer .bg_blur {
 
 
 @media (max-width: 1149px) {
+  .grid_demos .tophead .title{
+    font-size: 40px;
+  }
   .pm .table_content::before{
     display: none;
   }
@@ -6636,6 +6639,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
+  .grid_demos .tophead .title{
+    font-size: 30px;
+  }
   #tabs_scroll_wrap{
     display: none;
   }
