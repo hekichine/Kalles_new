@@ -293,7 +293,7 @@ const contentModal = (content) => {
   title.html(content.title);
   body_content.html(content.content);
 }
-modalPopup()
+// modalPopup()
 
 // ==================
 //    open popup link
@@ -315,4 +315,4 @@ const openPopupLink = () => {
 }
 
 
-openPopupLink();
+// openPopupLink();
