@@ -279,7 +279,7 @@ const closeModal = (modal) => {
   $(modal).removeClass('show');
 }
 const contentModal = (content) => {
-  let ratio = $('.custom_modal').find('.ratio');
+  // let ratio = $('.custom_modal').find('.ratio');
   let img = $('.custom_modal').find('img');
   let title = $('.custom_modal').find('.title');
   let body_content = $('.custom_modal').find('.m-body');
