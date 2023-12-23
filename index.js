@@ -1,6 +1,6 @@
 $(document).on('DOMContentLoaded', function () {
   // wowjs
-  new WOW().init();
+  new WOW({mobile:       false, }).init();
   // topbar
   let swiperOptions = {
     speed: 10000,
@@ -326,7 +326,6 @@ const rClear =()=>{
         const elHeight = $(this).height();
         const revealPoint = 150;
         // position & speed 
-        const posPoint = 20;
 
         // attr node
         el.style.transformOrigin = '50% 0';
