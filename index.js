@@ -303,15 +303,11 @@ const openPopupLink = () => {
 
   $(document).on('click', '[openPopupLink] a', function (e) {
     e.preventDefault();
-    if($(this).hasClass('clicked')){
-      return;
-    }
     let url = $(this).attr('href');
     $('password-popup').addClass('open');
     $('password-popup button.view_now').attr('data-location', url);
-    $('[openPopupLink] a').addClass('clicked');
+   
   })
 }
-
 
 openPopupLink();
