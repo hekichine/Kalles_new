@@ -1049,6 +1049,7 @@ fill-text .text .highlight {
 }
 
 @media (max-width: 1024px) {
+  
   .custom_modal .content-wrap {
     padding: 20px;
   }
@@ -1083,6 +1084,7 @@ fill-text .text .highlight {
 }
 
 @media (max-width: 767px) {
+ 
   [m-modal] .grid1-btn {
     opacity: 1;
     visibility: visible;

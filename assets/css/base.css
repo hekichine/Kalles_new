@@ -749,3 +749,12 @@ back-top:hover {
   background-color: var(--link-color);
   color: var(--link-hover);
 }
+
+@media (min-width: 768px) and (max-width: 991px){
+  .featured .col-md-6{
+    /* width: 100%; */
+  }
+  .featured .item:nth-child(2){
+    display: none;
+  }
+}

@@ -6270,6 +6270,35 @@ footer .bg_blur {
 }
 
 @media (max-width: 1024px) {
+  .booster :where(.item1, .item2) .item-inner{
+    height: 380px;
+  }
+  .booster .item2 .content{
+    top: unset;bottom: 0;right: 0;left: 0;
+    text-align: center;
+    padding: 0 15px 15px;
+  }
+  .booster .item1 .content{
+    text-align: center;
+  }
+  .booster .item2 .color_list,.booster .item2 .size_list{
+    display: none;
+  }
+  .text-animate .svg_center{
+    width: 36px;
+    height: 36px;
+  }
+  .text-animate .wrap_linear_animation{
+    width: 250px;
+    height: 250px;
+    transform: translateX(43%) translateY(-41%);
+  }
+  .text-animate .svg_stroke{
+    margin-right: 120px;
+  }
+  .text-animate .rounded-text{
+    width: 250px;height: 250px;
+  }
   .kl_sp .res_w{
     margin-bottom: 20px;
   }
@@ -6493,6 +6522,22 @@ footer .bg_blur {
   .pm .tophead h4 span,footer .content_wrap h4{
     font-size: 20px;
   }
+  .grid1 .item2 .wrap_content{
+    justify-content: flex-end;
+  }
+  .grid1 .item2 .ffks{
+    font-size: 12px;
+  }
+  .grid1 .item2 .groups_sale :where(.sale1, .sale2){
+    gap: 5px;
+  }
+  .grid1 .item2 .groups_sale{
+    padding: 0;
+    gap: 3px;
+  }
+  .grid1 .item2 .circle{
+    width: 24px;height: 24px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -6638,6 +6683,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
+  .fts2 .item4 .content,.fts2 .item5 .content{
+    padding-bottom: 10px;
+  }
   .featured .section-inner{
     padding-top: 120px;
   }

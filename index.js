@@ -311,3 +311,62 @@ const openPopupLink = () => {
 }
 
 openPopupLink();
+
+
+// reveal when scroll clean text
+const rClear =()=>{
+  let reveals = document.querySelectorAll('[text-animate-reveal]');
+          // attr parent
+  $('[text-reaveals-parent]').css({'perspective':'700px','transformStyle':'preserve-3d','perspectiveOrigin':'100% 0%'})
+  if(window.innerWidth > 768){
+    $(window).on('scroll', function () {
+      reveals.forEach((el,index) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const elHeight = $(this).height();
+        const revealPoint = 150;
+        // position & speed 
+        const posPoint = 20;
+
+        // attr node
+        el.style.transformOrigin = '50% 0';
+        el.style.translate = 'none';
+        el.style.rotate = 'none';
+        el.style.scale = 'none';
+        el.style.transition = 'all .35s ease';
+        // console.log(revealTop > windowHeight - revealPoint);
+        if(revealTop > windowHeight - revealPoint){
+          if(index == 0){
+            el.style.transform = `translateX(-8%)`;
+          }
+          if(index == 1){
+
+            el.style.transform = `scale(1)`;
+          }
+          if(index == 2){
+            el.style.transform = `translateX(4%)`;
+          }
+        }
+        if (revealTop < windowHeight - revealPoint) {
+          if(revealTop > -50){
+            let schemas = revealTop / windowHeight * 100;
+           
+            if(index == 0 ){
+              console.log();
+              el.style.transform = `translateX(${-schemas/10 + 0.55}%)`;
+            }
+            if(index == 2){
+              el.style.transform = `translateX(${schemas/10 - 7}%)`;
+            }
+
+          }
+          else{
+            el.style.transform = `translate(0,0)`
+          }
+        }
+        
+      })
+    })
+  }
+}
+rClear()
