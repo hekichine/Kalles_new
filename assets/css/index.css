@@ -3522,6 +3522,7 @@ line-height: 1.4;
   -webkit-animation: circle_linear 10s linear infinite;
   animation: circle_linear 10s linear infinite;
   background-size: 400% 400%;
+  overflow: hidden;
 }
 
 .pm .tb_ct .total {
