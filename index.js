@@ -36,7 +36,7 @@ $(document).on('DOMContentLoaded', function () {
     }
   })
   $(window).on('load', function () {
-    $('.header .header_wrap').addClass('open');
+    $('.header header-custom').addClass('open');
     $('.header .logo_brand').addClass('effect-running');
   });
 

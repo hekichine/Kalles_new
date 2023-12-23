@@ -125,6 +125,18 @@ section.topbar .storm svg {
       2. Header
 =============================
 */
+header-custom {
+  opacity: 0;
+  transform: translateY(-15px);
+}
+header-custom.open {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible;
+}
+
 .header .header_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,14 +153,6 @@ section.topbar .storm svg {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: .35s ease-in-out;
-  -o-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
 }
 
 .header .header-sticky .header_wrap {
@@ -156,13 +160,6 @@ section.topbar .storm svg {
   padding-bottom: 15px;
 }
 
-.header .header_wrap.open {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  visibility: visible;
-}
 
 .header_wrap .nav_list {
   display: -webkit-box;
@@ -328,9 +325,8 @@ section.topbar .storm svg {
 }
 
 .header header-custom {
-  -webkit-transition: .35s ease-in-out;
-  -o-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
+  transition: top .15s ease,opacity .25s ease-in-out, background-color .25s linear, transform .25s ease-in;
+  will-change: top,opacity,background-color,transform;
 }
 
 /* 
