@@ -3519,8 +3519,6 @@ line-height: 1.4;
   background: linear-gradient(100deg, #00BAD4 7.72%, red 100%);
   -webkit-filter: blur(13.619377136230469px);
   filter: blur(13.619377136230469px);
-  -webkit-animation: circle_linear 10s linear infinite;
-  animation: circle_linear 10s linear infinite;
   background-size: 400% 400%;
   overflow: hidden;
 }
@@ -6640,6 +6638,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
+  .banner .banner_video{
+    overflow: hidden;
+  }
   .grid_demos .tophead .title{
     font-size: 30px;
   }
