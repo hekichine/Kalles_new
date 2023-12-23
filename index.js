@@ -89,7 +89,7 @@ $(document).on('DOMContentLoaded', function () {
   if (window.innerWidth > 1149) {
     let rows = $('.tb_row').toArray();
     let index0 = 0;
-    let in_space = 5;
+    let in_space = 9;
     $('.tb_row').hide();
     $(rows.splice(index0, in_space)).show();
     $(document).on('click', '[table_loadmore]', function (e) {

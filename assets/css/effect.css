@@ -1004,10 +1004,32 @@ fill-text .text .highlight {
 .custom_modal .ctxx_ {
   overflow-y: scroll;
   max-height: 85vh;
-  max-width: 55vw;
+  max-width: 40vw;
   width: 100%;
   height: 100%;
   display: block;
+}
+/* width */
+.custom_modal .ctxx_::-webkit-scrollbar {
+  width: 0.5px;
+  display: none;
+
+}
+
+/* Track */
+.custom_modal .ctxx_::-webkit-scrollbar-track {
+  background: #000;
+
+}
+
+/* Handle */
+.custom_modal .ctxx_::-webkit-scrollbar-thumb {
+  background: blue;
+}
+
+/* Handle on hover */
+.custom_modal .ctxx_::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }
 
 @media (max-width: 1440px) {
@@ -1298,4 +1320,48 @@ password-popup .view_now {
 password-popup span{
     color: #7b7b93;
     font-weight: 300;
+}
+
+.hover_g{
+  position: relative;
+}
+.hover_g::before{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
+  background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
+  top: 60%;
+  left: -1px;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-in-out, top .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out, top .25s ease-in-out;
+  transition: opacity .25s ease-in-out, top .25s ease-in-out;
+  will-change: opacity, top;
+}
+.hover_g::after{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
+  background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
+  background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
+  bottom: 60%;
+  right: -1px;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-in-out, bottom .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out, bottom .25s ease-in-out;
+  transition: opacity .25s ease-in-out, bottom .25s ease-in-out;
+  will-change: opacity, bottom;
+}
+.hover_g:hover::before{
+  top: 15%;
+  opacity: 1;
+}
+.hover_g:hover::after{
+  bottom: 15%;
+  opacity: 1;
 }
