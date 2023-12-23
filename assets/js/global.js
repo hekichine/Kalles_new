@@ -400,4 +400,4 @@ class passPopup extends HTMLElement {
     })
   }
 }
-// customElements.define('password-popup', passPopup)
+customElements.define('password-popup', passPopup)
