@@ -5910,7 +5910,9 @@ footer .bg_blur {
 
 
 @media (max-width: 1149px) {
-
+  .pm .table_content::before{
+    display: none;
+  }
 
   .featured .wrapper .item .img_wrap:not(:first-child) {
     margin-top: 15px;
