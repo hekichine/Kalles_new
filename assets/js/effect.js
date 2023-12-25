@@ -80,7 +80,7 @@ class Effect extends HTMLElement {
       return
     }
     if(window.innerWidth < 767){
-      return;
+      // return;
     }
     this.EffNum = this.getAttribute('eff-num');
     this.container = this.querySelector('div[effect-parent]');
