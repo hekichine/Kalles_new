@@ -507,7 +507,7 @@ drawer#menu_mobile {
 #menu_mobile .cta_close_menu {
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 0px;
   padding: 10px;
   color: #fff;
   background-color: #000;
@@ -624,8 +624,6 @@ drawer#menu_mobile {
   overflow-x: auto;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   padding: 5px;
 }
 
