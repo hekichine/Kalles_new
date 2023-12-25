@@ -6204,6 +6204,7 @@ footer .bg_blur {
 
   .grid1 .grid_wrap .item1 .title_sub {
     line-height: normal;
+    letter-spacing: 0.5px;
   }
 
   .grid1 .grid_wrap .item1 .title {
