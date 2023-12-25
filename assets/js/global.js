@@ -207,7 +207,7 @@ class tabsBuilder extends HTMLElement {
   }
 
 }
-// customElements.define('tabs-builder', tabsBuilder)
+customElements.define('tabs-builder', tabsBuilder)
 
 // ============================
 // video custom
