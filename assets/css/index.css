@@ -6654,6 +6654,11 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
+  .demos_layout .btn_demo_groups .btn_demos{
+    background: var(--linear9);
+    border: none;
+    color: #fff;
+  }
   .grid_demos .bg_light{
     display: none;
   }

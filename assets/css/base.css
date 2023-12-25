@@ -44,6 +44,8 @@
   --linear7: linear-gradient(113deg, #EA1D62 5.37%, #F2944F 108.05%);
   --linear8: linear-gradient(100deg, #00D426 7.72%, #21FFF2 118.76%);
 
+  --linear9: linear-gradient(41deg, #00BAD4 7.72%, #2194FF 55.76%,#A05DFE 93.63%);
+
   --card-bg: #101010;
   --card-title: #fff;
   --card-des: rgba(255, 255, 255, 0.48);
