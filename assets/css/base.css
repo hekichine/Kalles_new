@@ -234,7 +234,9 @@ button:focus {
   display: flex;
   overflow: hidden;
   overflow-x: auto;
-  padding: 5px;
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .d-none {
