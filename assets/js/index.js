@@ -4,7 +4,7 @@ $(document).on('DOMContentLoaded', function() {
     mobile: true,
   }).init();
   // topbar
-  return;
+
   let swiperOptions = {
     speed: 10000,
     autoplay: {
@@ -20,7 +20,7 @@ $(document).on('DOMContentLoaded', function() {
     allowTouchMove: false
   };
   let topbar = new Swiper(".topbar .swiper", swiperOptions);
-
+  return;
   // active link
   $(document).on('click', '.header .nav_link', function() {
     console.log(1);
