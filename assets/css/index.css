@@ -4111,9 +4111,7 @@ line-height: 1.4;
   background-size: cover;
 
 }
-.s_vv video{
-  content-visibility: auto;
-}
+
 .s_vv .bg_blur {
   border-radius: 438px;
   background: -o-linear-gradient(9deg, #CE1BFB 10.86%, #35E6CC 89.96%);
