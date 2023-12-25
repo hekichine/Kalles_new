@@ -240,7 +240,7 @@ class customVideo extends HTMLElement {
   }
 
 }
-customElements.define('custom-video', customVideo)
+// customElements.define('custom-video', customVideo)
 
 // ============================
 // Text typing
