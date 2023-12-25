@@ -20,7 +20,6 @@ $(document).on('DOMContentLoaded', function() {
     allowTouchMove: false
   };
   let topbar = new Swiper(".topbar .swiper", swiperOptions);
-  return;
   // active link
   $(document).on('click', '.header .nav_link', function() {
     $('.header').find('.nav_link.active').removeClass('active');
