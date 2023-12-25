@@ -20,17 +20,15 @@ $(document).on('DOMContentLoaded', function() {
     allowTouchMove: false
   };
   let topbar = new Swiper(".topbar .swiper", swiperOptions);
-
+  return;
   // active link
   $(document).on('click', '.header .nav_link', function() {
-    console.log(1);
     $('.header').find('.nav_link.active').removeClass('active');
     $(this).addClass('active')
   })
-  return;
+
   // // active link on mobile
   $(document).on('click', '#menu_mobile .nav_link', function() {
-    console.log(1);
     $('#menu_mobile').find('.nav_link.active').removeClass('active');
     $(this).addClass('active')
   })
