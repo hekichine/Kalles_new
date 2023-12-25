@@ -38,8 +38,8 @@ $(document).on('DOMContentLoaded', function() {
     }
   })
   $(window).on('load', function() {
-    $('.header header-custom').addClass('open');
-    $('.header .logo_brand').addClass('effect-running');
+    $('header-custom').addClass('open');
+    $('header-custom .logo_brand').addClass('effect-running');
   });
 
   //  isotope  demos 
