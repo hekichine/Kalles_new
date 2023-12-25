@@ -248,6 +248,9 @@ customElements.define('custom-video', customVideo)
 class textTyping extends HTMLElement {
   constructor() {
     super();
+    if(window.innerWidth < 767){
+      return;
+    }
     // Initialize variables
     this.typeJsText = this.querySelector(".animatedText");
     this.stringIndex = 0; // Index of the current string in the array
@@ -298,7 +301,7 @@ class textTyping extends HTMLElement {
     }
   }
 }
-// customElements.define('text-typing', textTyping)
+customElements.define('text-typing', textTyping)
 
 
 // ============================
