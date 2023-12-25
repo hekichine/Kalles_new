@@ -128,10 +128,10 @@ a {
   pointer-events: auto;
   cursor: pointer;
 }
-
 a:hover {
-  color: var(--link-hover);
+  color: inherit;
 }
+
 
 button {
   pointer-events: auto;
@@ -622,6 +622,9 @@ drawer#menu_mobile {
 
 @media (min-width: 1150px) {
 
+  a:hover {
+    color: var(--link-hover);
+  }
   .g-lg-32 {
     --bs-gutter-x: 32px;
     --bs-gutter-y: 32px;

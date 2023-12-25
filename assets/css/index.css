@@ -6655,6 +6655,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
+  .grid_demos .bg_light{
+    display: none;
+  }
   .grid1 .grid_wrap .item1 .inner .bg_blur {
     display: none;
   }
@@ -7193,6 +7196,7 @@ footer .bg_blur {
 
   .grid_demos .demos_tabs_group ul {
     gap: 10px;
+    padding: 15px 0;
   }
 
   .grid1 .grid_wrap {
