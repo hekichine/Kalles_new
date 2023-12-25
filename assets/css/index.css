@@ -7108,14 +7108,14 @@ footer .bg_blur {
     padding: 30px 0;
   }
 
-  .text-animate .text-bottom .svg {
-    display: none;
+  .text-animate .text-bottom svg {
+    width: 100px;
   }
 
   .text-animate .text-bottom {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
   }
 
   .text-animate .svg_stroke {
@@ -7125,7 +7125,7 @@ footer .bg_blur {
   .text-animate .text-bottom .versatile,
   .text-animate .text-top .clean,
   .text-animate .text-center .text-linear {
-    width: 100%;
+    /* width: 100%; */
     letter-spacing: 0;
   }
 

@@ -284,6 +284,9 @@ $(document).on('DOMContentLoaded', function () {
 
   // reveal when scroll clean text
   const rClear = () => {
+    if(window.innerWidth<767){
+      return;
+    }
     let reveals = document.querySelectorAll('[text-animate-reveal]');
     // attr parent
     $('[text-reaveals-parent]').css({ 'perspective': '700px', 'transformStyle': 'preserve-3d', 'perspectiveOrigin': '100% 0%' })
