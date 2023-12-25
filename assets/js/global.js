@@ -224,7 +224,7 @@ class customVideo extends HTMLElement {
       // return;
     }
     this.starttime = this.config.time_start;
-    this.video = this.querySelector('#video');
+    this.video = this.querySelector('.video');
     this.endtime = this.video.duration;
     this.playVideo();
   }
