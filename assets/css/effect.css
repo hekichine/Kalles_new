@@ -1015,6 +1015,7 @@ fill-text .text .highlight {
   height: 100%;
   display: block;
 }
+
 /* width */
 .custom_modal .ctxx_::-webkit-scrollbar {
   width: 0.5px;
@@ -1038,6 +1039,13 @@ fill-text .text .highlight {
   background: #000;
 }
 
+.animatedText {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 @media (max-width: 1440px) {
   .custom_modal .m_btns {
     margin-top: 25px;
@@ -1049,7 +1057,7 @@ fill-text .text .highlight {
 }
 
 @media (max-width: 1024px) {
-  
+
   .custom_modal .content-wrap {
     padding: 20px;
   }
@@ -1084,7 +1092,7 @@ fill-text .text .highlight {
 }
 
 @media (max-width: 767px) {
- 
+
   [m-modal] .grid1-btn {
     opacity: 1;
     visibility: visible;
@@ -1259,11 +1267,11 @@ password-popup {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   pointer-events: none;
   visibility: hidden;
 }
@@ -1278,7 +1286,7 @@ password-popup .overlay {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.48);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   opacity: 0;
   -webkit-transition: opacity .2s ease-in;
   -o-transition: opacity .2s ease-in;
@@ -1336,15 +1344,17 @@ password-popup .view_now {
   margin: 20px auto;
   color: #fff;
 }
-password-popup span{
-    color: #7b7b93;
-    font-weight: 300;
+
+password-popup span {
+  color: #7b7b93;
+  font-weight: 300;
 }
 
-.hover_g{
+.hover_g {
   position: relative;
 }
-.hover_g::before{
+
+.hover_g::before {
   position: absolute;
   content: "";
   width: 1px;
@@ -1360,7 +1370,8 @@ password-popup span{
   transition: opacity .25s ease-in-out, top .25s ease-in-out;
   will-change: opacity, top;
 }
-.hover_g::after{
+
+.hover_g::after {
   position: absolute;
   content: "";
   width: 1px;
@@ -1376,11 +1387,13 @@ password-popup span{
   transition: opacity .25s ease-in-out, bottom .25s ease-in-out;
   will-change: opacity, bottom;
 }
-.hover_g:hover::before{
+
+.hover_g:hover::before {
   top: 15%;
   opacity: 1;
 }
-.hover_g:hover::after{
+
+.hover_g:hover::after {
   bottom: 15%;
   opacity: 1;
 }

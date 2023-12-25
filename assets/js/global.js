@@ -243,65 +243,6 @@ class customVideo extends HTMLElement {
 customElements.define('custom-video', customVideo)
 
 // ============================
-// Text typing
-// ============================
-class textTyping extends HTMLElement {
-  constructor() {
-    super();
-    // Initialize variables
-    this.typeJsText = this.querySelector(".animatedText");
-    this.stringIndex = 0; // Index of the current string in the array
-    this.charIndex = 0; // Index of the current character in the current string
-    this.isTyping = true; // Whether we are currently typing or erasing
-    // Define an array of strings to be displayed and erased
-    this.textArray = [
-      "Christmas sale!",
-      "Fashion trending 2024",
-      "Kalles trending product"
-      // Add more strings as needed
-    ];
-    // Set an interval to call the typeJs function
-    setInterval(() => {
-      this.typeJs();
-    }, 100); // You can adjust the animation speed as needed
-  }
-  typeJs() {
-    if (this.stringIndex < this.textArray?.length) {
-      // Check if there are more strings to display or erase
-      const currentString = this.textArray[this.stringIndex];
-
-      if (this.isTyping) {
-        // Typing animation
-        if (this.charIndex < currentString.length) {
-          this.typeJsText.innerHTML += currentString.charAt(this.charIndex);
-          this.charIndex++;
-        } else {
-          this.isTyping = false; // Switch to erasing mode
-        }
-      } else {
-        // Erasing animation
-        if (this.charIndex > 0) {
-          this.typeJsText.innerHTML = currentString.substring(0, this.charIndex - 1);
-          this.charIndex--;
-        } else {
-          this.isTyping = true; // Switch back to typing mode
-          this.stringIndex++; // Move to the next string
-
-          if (this.stringIndex >= this.textArray.length) {
-            this.stringIndex = 0; // Reset to the beginning of the array
-          }
-
-          this.charIndex = 0; // Reset character index
-          this.typeJsText.innerHTML = ""; // Clear the content for the new string
-        }
-      }
-    }
-  }
-}
-// customElements.define('text-typing', textTyping)
-
-
-// ============================
 // Partner section
 // ============================
 
