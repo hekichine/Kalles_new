@@ -3,7 +3,7 @@
 // ============================
 class Header extends HTMLElement {
   constructor() {
-    super()
+    super();
     this.config = JSON.parse(this.getAttribute('config'));
     this.cta_mb = this.querySelector('.cta_menu_mb');
     this.menu_mobile = document.querySelector('#menu_mobile');
@@ -68,6 +68,7 @@ class Header extends HTMLElement {
 
 }
 customElements.define('header-custom', Header)
+
 
 
 // ============================
@@ -206,7 +207,8 @@ class tabsBuilder extends HTMLElement {
   }
 
 }
-customElements.define('tabs-builder', tabsBuilder)
+// customElements.define('tabs-builder', tabsBuilder)
+
 // ============================
 // video custom
 // ============================
@@ -238,7 +240,8 @@ class customVideo extends HTMLElement {
   }
 
 }
-customElements.define('custom-video', customVideo)
+// customElements.define('custom-video', customVideo)
+
 // ============================
 // Text typing
 // ============================
@@ -295,7 +298,7 @@ class textTyping extends HTMLElement {
     }
   }
 }
-customElements.define('text-typing', textTyping)
+// customElements.define('text-typing', textTyping)
 
 
 // ============================
@@ -342,7 +345,7 @@ class partner extends HTMLElement {
     })
   }
 }
-customElements.define('partner-custom', partner)
+// customElements.define('partner-custom', partner)
 
 
 
@@ -370,7 +373,7 @@ class backTop extends HTMLElement {
     });
   }
 }
-customElements.define('back-top', backTop);
+// customElements.define('back-top', backTop);
 
 // ============================
 // custom modal
@@ -399,4 +402,4 @@ class passPopup extends HTMLElement {
     })
   }
 }
-customElements.define('password-popup', passPopup)
+// customElements.define('password-popup', passPopup)
