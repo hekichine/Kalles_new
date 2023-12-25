@@ -608,13 +608,6 @@ drawer#menu_mobile {
   }
 }
 
-.scroll-snap {
-  display: flex;
-  overflow: hidden;
-  overflow-x: auto;
-  padding: 5px;
-}
-
 .g-15 {
   --bs-gutter-x: 15px;
   --bs-gutter-y: 15px;

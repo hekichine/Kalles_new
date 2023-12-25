@@ -1819,7 +1819,6 @@ header-custom.open {
 .grid_demos .tophead {
   position: relative;
   text-align: center;
-  padding: 0 15px;
 }
 
 .grid_demos .tophead .title {
@@ -1883,6 +1882,7 @@ header-custom.open {
   gap: 16px;
   margin: 0;
   padding: 0;
+
 }
 
 .grid_demos .demos_tab_item {
@@ -6060,8 +6060,7 @@ footer .bg_blur {
   }
 
   .grid_demos .demos_tabs_group ul {
-
-
+    overflow-x: scroll;
     display: flex;
   }
 
