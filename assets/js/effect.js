@@ -31,7 +31,6 @@ class fillTextScrolling extends HTMLElement {
 }
 customElements.define('fill-text', fillTextScrolling)
 
-return;
 
 // ===============================
 //  Button effect when hover
@@ -55,17 +54,20 @@ class Effect extends HTMLElement {
     if (window.innerWidth < 767) {
       // return;
     }
-    this.EffNum = this.getAttribute('eff-num');
+    // this.EffNum = this.getAttribute('eff-num');
+    this.EffNum = 3;
     this.container = this.querySelector('div[effect-parent]');
     this.background = 'none';
     this.createChild();
 
-    this.addEventListener('mousemove', (e) => {
-      this.onHover(e);
-    })
-    this.addEventListener('mouseleave', () => {
-      this.leaveHover();
-    })
+    if (window.innerWidth > 1149) {
+      this.addEventListener('mousemove', (e) => {
+        this.onHover(e);
+      })
+      this.addEventListener('mouseleave', () => {
+        this.leaveHover();
+      })
+    }
   }
   createChild() {
     // console.log("if > 3 item => Random color is running");
