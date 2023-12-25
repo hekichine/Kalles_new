@@ -1888,8 +1888,6 @@ header-custom.open {
 .grid_demos .demos_tab_item {
 
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border-radius: 8px;
   gap: 12px;
@@ -6062,6 +6060,7 @@ footer .bg_blur {
   .grid_demos .demos_tabs_group ul {
     overflow-x: scroll;
     display: flex;
+    padding: 15px 0;
   }
 
   .min_banner .content {
