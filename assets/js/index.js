@@ -22,11 +22,11 @@ $(document).on('DOMContentLoaded', function() {
   let topbar = new Swiper(".topbar .swiper", swiperOptions);
 
   // active link
-  $(document).on('click', '.header .nav_link', function() {
-    console.log(1);
-    $('.header').find('.nav_link.active').removeClass('active');
-    $(this).addClass('active')
-  })
+  // $(document).on('click', '.header .nav_link', function() {
+  //   console.log(1);
+  //   $('.header').find('.nav_link.active').removeClass('active');
+  //   $(this).addClass('active')
+  // })
 
   // // active link on mobile
   // $(document).on('click', '#menu_mobile .nav_link', function() {
