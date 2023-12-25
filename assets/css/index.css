@@ -4109,7 +4109,7 @@ line-height: 1.4;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  content-visibility: hidden;
+  content-visibility: auto;
 }
 
 .s_vv .bg_blur {
