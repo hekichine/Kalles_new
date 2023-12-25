@@ -271,13 +271,14 @@ $(document).on('DOMContentLoaded', function() {
   const openPopupLink = () => {
     let flag = false
     $(document).on('click', '[openPopupLink] a', function(e) {
-      e.preventDefault();
+
+      let url = $(this).attr('href');
+      $('password-popup button.view_now').attr('data-location', url);
       if(flag == true){
         return;
       }
-      let url = $(this).attr('href');
+      e.preventDefault();
       $('password-popup').addClass('open');
-      $('password-popup button.view_now').attr('data-location', url);
       flag= true;
     })
   }
