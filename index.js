@@ -34,14 +34,14 @@ $(document).on('DOMContentLoaded', function () {
     if (window.innerWidth > 1149) {
       $('#menu_mobile,.cta_menu_mb.open').removeClass('open');
     }
-    if(window.innerWidth < 767){
-      console.log("Delete poster video on mobile.");
-      $('video').removeAttr('poster');
-    }
   })
   $(window).on('load', function () {
     $('.header header-custom').addClass('open');
     $('.header .logo_brand').addClass('effect-running');
+    if(window.innerWidth < 767){
+      console.log("Delete poster video on mobile.");
+      $('video').removeAttr('poster');
+    }
   });
 
   //  isotope  demos 
