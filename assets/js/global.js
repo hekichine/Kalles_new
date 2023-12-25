@@ -298,7 +298,7 @@ class textTyping extends HTMLElement {
     }
   }
 }
-// customElements.define('text-typing', textTyping)
+customElements.define('text-typing', textTyping)
 
 
 // ============================
