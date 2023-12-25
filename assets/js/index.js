@@ -1,4 +1,5 @@
 $(document).on('DOMContentLoaded', function() {
+  return;
   // wowjs
   new WOW({
     mobile: false,
