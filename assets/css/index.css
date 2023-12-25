@@ -235,8 +235,9 @@ header-custom .header-sticky .header_wrap {
 .call_to_action .cta:hover {
   color: var(--accent-color);
 }
+
 /* header */
-header-custom{
+header-custom {
   display: block;
   z-index: 10;
 }
@@ -674,9 +675,11 @@ header-custom header-custom {
   transition: all .25s ease-in;
 
 }
-.banner .tab-item:not(:last-child){
+
+.banner .tab-item:not(:last-child) {
   margin-bottom: 5px;
 }
+
 .banner .tab-item .tab-inner {
   color: rgba(255, 255, 255, 0.40);
   font-size: 14px;
@@ -2049,7 +2052,8 @@ header-custom header-custom {
   font-weight: 500;
   line-height: 1.4;
 }
-.demos_layout .btn_demos.light_skew{
+
+.demos_layout .btn_demos.light_skew {
   --accent-color: #de6475;
 }
 
@@ -5225,6 +5229,22 @@ footer .content_wrap h3 {
   margin-bottom: 64px;
 }
 
+footer .sub_text {
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+footer .sub_text .large {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 footer .gr_btns {
 
   display: flex;
@@ -5297,12 +5317,14 @@ footer .bg_blur {
 .demo_ec_demos {
   display: none !important;
 }
-.tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner .img_wrap img{
+
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner .img_wrap img {
   transition: transform .5s linear;
 }
+
 @media (min-width: 1150px) {
-  .tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner:hover .img_wrap img{
-   transform: scale(1.05);
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner:hover .img_wrap img {
+    transform: scale(1.05);
   }
 
   .g_kl .section-inner,
@@ -6074,9 +6096,12 @@ footer .bg_blur {
     display: flex;
     padding: 15px 0;
   }
-  .grid_demos .tophead .des,.grid_demos .demos_tabs_group{
+
+  .grid_demos .tophead .des,
+  .grid_demos .demos_tabs_group {
     margin-bottom: 30px;
   }
+
   .min_banner .content {
     max-width: 100%;
     gap: 10px;
@@ -6667,14 +6692,22 @@ footer .bg_blur {
 }
 
 @media (max-width: 767px) {
-  .demos_layout .btn_demo_groups .btn_demos{
+  footer .sub_text{
+    font-size: 12px;
+  }
+  footer .sub_text .large{
+    font-size: 14px;
+  }
+  .demos_layout .btn_demo_groups .btn_demos {
     background: var(--linear9);
     border: none;
     color: #fff;
   }
-  .grid_demos .bg_light{
+
+  .grid_demos .bg_light {
     display: none;
   }
+
   .grid1 .grid_wrap .item1 .inner .bg_blur {
     display: none;
   }
