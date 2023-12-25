@@ -1,7 +1,7 @@
 $(document).on('DOMContentLoaded', function() {
   // wowjs
   new WOW({
-    mobile: true,
+    mobile: false,
   }).init();
   // topbar
   let swiperOptions = {
