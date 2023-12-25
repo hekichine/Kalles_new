@@ -2385,6 +2385,7 @@ header-custom header-custom {
 }
 
 .text-animate .svg_center {
+  display: block !important;
   fill: #FFF;
   -webkit-filter: drop-shadow(0px 0px 4.536px #F55AAA) drop-shadow(0px 0px 9.072px #F55AAA) drop-shadow(0px 0px 31.752px #F55AAA) drop-shadow(0px 0px 63.504px #F55AAA) drop-shadow(0px 0px 108.864px #F55AAA) drop-shadow(0px 0px 190.512px #F55AAA);
   filter: drop-shadow(0px 0px 4.536px #F55AAA) drop-shadow(0px 0px 9.072px #F55AAA) drop-shadow(0px 0px 31.752px #F55AAA) drop-shadow(0px 0px 63.504px #F55AAA) drop-shadow(0px 0px 108.864px #F55AAA) drop-shadow(0px 0px 190.512px #F55AAA);
