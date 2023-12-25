@@ -6702,6 +6702,7 @@ footer .bg_blur {
     background: var(--linear9);
     border: none;
     color: #fff;
+    height: 34px;font-size: 12px;
   }
 
   .grid_demos .bg_light {
@@ -6751,7 +6752,10 @@ footer .bg_blur {
   }
 
   #tabs_scroll_wrap {
-    display: none;
+    /* display: none; */
+  }
+  .tabs_scroll .tab_scroll_layout .tabs .control-scroll{
+    margin: 10px 0;
   }
 
   .grid1 .item2 .groups_sale {
