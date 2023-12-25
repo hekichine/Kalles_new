@@ -301,7 +301,8 @@ $(document).on('DOMContentLoaded', function () {
           el.style.translate = 'none';
           el.style.rotate = 'none';
           el.style.scale = 'none';
-          el.style.transition = 'all .35s ease';
+          el.style.transition = 'transform .25s linear';
+          el.style.willChange = 'transform';
           // console.log(revealTop > windowHeight - revealPoint);
           if (revealTop > windowHeight - revealPoint) {
             if (index == 0) {
