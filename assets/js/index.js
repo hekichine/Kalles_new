@@ -346,12 +346,5 @@ $(document).on('DOMContentLoaded', function() {
   }
   rClear();
 
-  // text typing
-  
-  let typed = new Typed(".animatedText",{
-    strings: ["Christmas sale","Fashion trending 2024","Kalles trending product"],
-    typeSpeed: 150,
-    backSpeed: 150,
-    loop : true
-})
+  // díable poster video on mobile
 })
