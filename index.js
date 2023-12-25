@@ -35,7 +35,8 @@ $(document).on('DOMContentLoaded', function () {
       $('#menu_mobile,.cta_menu_mb.open').removeClass('open');
     }
     if(window.innerWidth < 767){
-      $('video').removeAttr('poster')
+      console.log("Delete poster video on mobile.");
+      $('video').removeAttr('poster');
     }
   })
   $(window).on('load', function () {
