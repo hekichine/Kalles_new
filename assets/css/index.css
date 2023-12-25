@@ -6058,7 +6058,6 @@ footer .bg_blur {
   }
 
   .grid_demos .demos_tabs_group ul {
-    overflow-x: scroll;
     display: flex;
     padding: 15px 0;
   }

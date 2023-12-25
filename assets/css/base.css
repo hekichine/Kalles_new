@@ -230,6 +230,12 @@ button:focus {
 .text-through {
   text-decoration: line-through;
 }
+.scroll-snap {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  padding: 5px;
+}
 
 .d-none {
   display: none;
