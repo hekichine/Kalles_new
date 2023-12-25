@@ -3,34 +3,6 @@
 // ===============================
 
 
-// ===============================
-//  fill text when scrolling
-// ===============================
-
-// STRUCT
-// <fillText>
-//  <span class="text">lorem isum ....</span>
-// </fillText>
-// 
-
-// window.addEventListener('scroll', () => {
-//   let scroll = getScrollFraction();
-//   let words_highlighted = scroll * words.length;
-
-//   text.innerHTML = words
-//   .map((w, i) => `<span ${i < words_highlighted ? HIGHLIGHT : ''}>${w}</span>`)
-//   .join(' ');
-// })
-
-// from https://stackoverflow.com/a/8028584/2931840
-//
-// function getScrollFraction() {
-//     var h = document.documentElement, 
-//         b = document.body,
-//         st = 'scrollTop',
-//         sh = 'scrollHeight';
-//     return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight);
-// }
 
 class fillTextScrolling extends HTMLElement {
   constructor() {
@@ -59,6 +31,7 @@ class fillTextScrolling extends HTMLElement {
 }
 customElements.define('fill-text', fillTextScrolling)
 
+return;
 
 // ===============================
 //  Button effect when hover
