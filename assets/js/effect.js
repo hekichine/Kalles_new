@@ -79,14 +79,14 @@ class Effect extends HTMLElement {
     if (!this.querySelector('[effect-parent]')) {
       return
     }
-    if(window.innerWidth < 767){
+    if (window.innerWidth < 767) {
       // return;
     }
     this.EffNum = this.getAttribute('eff-num');
     this.container = this.querySelector('div[effect-parent]');
     this.background = 'none';
     this.createChild();
-   
+
     this.addEventListener('mousemove', (e) => {
       this.onHover(e);
     })
@@ -149,4 +149,3 @@ class Effect extends HTMLElement {
   }
 }
 customElements.define('effect-custom', Effect);
-

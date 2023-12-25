@@ -1,6 +1,8 @@
-$(document).on('DOMContentLoaded', function () {
+$(document).on('DOMContentLoaded', function() {
   // wowjs
-  new WOW({ mobile: false, }).init();
+  new WOW({
+    mobile: false,
+  }).init();
   // topbar
   let swiperOptions = {
     speed: 10000,
@@ -19,23 +21,23 @@ $(document).on('DOMContentLoaded', function () {
   let topbar = new Swiper(".topbar .swiper", swiperOptions);
 
   // active link
-  $(document).on('click', '.header .nav_link', function () {
+  $(document).on('click', '.header .nav_link', function() {
     console.log(1);
     $('.header').find('.nav_link.active').removeClass('active');
     $(this).addClass('active')
   })
   // active link on mobile
-  $(document).on('click', '#menu_mobile .nav_link', function () {
+  $(document).on('click', '#menu_mobile .nav_link', function() {
     console.log(1);
     $('#menu_mobile').find('.nav_link.active').removeClass('active');
     $(this).addClass('active')
   })
-  $(window).on('resize', function () {
+  $(window).on('resize', function() {
     if (window.innerWidth > 1149) {
       $('#menu_mobile,.cta_menu_mb.open').removeClass('open');
     }
   })
-  $(window).on('load', function () {
+  $(window).on('load', function() {
     $('.header header-custom').addClass('open');
     $('.header .logo_brand').addClass('effect-running');
   });
@@ -46,17 +48,19 @@ $(document).on('DOMContentLoaded', function () {
     layoutMode: "fitRows",
     filter: "*",
   });
-  $("[filter-tabs]").on("click", "a.demos_tab_item", function (e) {
+  $("[filter-tabs]").on("click", "a.demos_tab_item", function(e) {
     e.preventDefault();
     $(this).parents('[filter-tabs]').find('a.demos_tab_item.active').removeClass('active')
     $(this).toggleClass('active')
     let filterValue = $(this).attr("data-filter");
-    $grid.isotope({ filter: filterValue });
+    $grid.isotope({
+      filter: filterValue
+    });
   });
 
   //  tabs_demos scroll
 
-  $('#tabs_scroll').on('click', 'ul li .control-scroll', function () {
+  $('#tabs_scroll').on('click', 'ul li .control-scroll', function() {
     $(this).parents('ul').find('.control-scroll.active').removeClass('active');
     $(this).addClass('active')
   })
@@ -92,7 +96,7 @@ $(document).on('DOMContentLoaded', function () {
     let in_space = 9;
     $('.tb_row').hide();
     $(rows.splice(index0, in_space)).show();
-    $(document).on('click', '[table_loadmore]', function (e) {
+    $(document).on('click', '[table_loadmore]', function(e) {
       e.preventDefault();
       $(rows.splice(index0, 300)).slideDown();
       $(this).hide();
@@ -180,7 +184,7 @@ $(document).on('DOMContentLoaded', function () {
     allowTouchMove: false,
   });
 
-  $(document).on('click', '.vt button', function () {
+  $(document).on('click', '.vt button', function() {
     $('.vt button.active').removeClass('active');
     vid_tes.slideTo($(this).data("index"));
     $(this).addClass('active')
@@ -220,7 +224,7 @@ $(document).on('DOMContentLoaded', function () {
   //    Modal popup
   // ==================
   const modalPopup = () => {
-    $(document).on('click', '[m-modal] .box-popup_click', function (e) {
+    $(document).on('click', '[m-modal] .box-popup_click', function(e) {
       e.preventDefault();
       let parent = $(this).parents('[m-modal]');
       let pop_item = {
@@ -233,7 +237,7 @@ $(document).on('DOMContentLoaded', function () {
       contentModal(pop_item);
       openModal('.custom_modal')
     });
-    $(document).on('click', '.custom_modal .overlay,.custom_modal .close-btn', function () {
+    $(document).on('click', '.custom_modal .overlay,.custom_modal .close-btn', function() {
       closeModal('.custom_modal')
     })
   }
@@ -266,7 +270,7 @@ $(document).on('DOMContentLoaded', function () {
 
   const openPopupLink = () => {
 
-    $(document).on('click', '[openPopupLink] a', function (e) {
+    $(document).on('click', '[openPopupLink] a', function(e) {
       e.preventDefault();
       let url = $(this).attr('href');
       $('password-popup').addClass('open');
@@ -280,14 +284,18 @@ $(document).on('DOMContentLoaded', function () {
 
   // reveal when scroll clean text
   const rClear = () => {
-    if(window.innerWidth<767){
+    if (window.innerWidth < 767) {
       return;
     }
     let reveals = document.querySelectorAll('[text-animate-reveal]');
     // attr parent
-    $('[text-reaveals-parent]').css({ 'perspective': '700px', 'transformStyle': 'preserve-3d', 'perspectiveOrigin': '100% 0%' })
+    $('[text-reaveals-parent]').css({
+      'perspective': '700px',
+      'transformStyle': 'preserve-3d',
+      'perspectiveOrigin': '100% 0%'
+    })
     if (window.innerWidth > 768) {
-      $(window).on('scroll', function () {
+      $(window).on('scroll', function() {
         reveals.forEach((el, index) => {
           const windowHeight = window.innerHeight;
           const revealTop = el.getBoundingClientRect().top;
@@ -327,8 +335,7 @@ $(document).on('DOMContentLoaded', function () {
                 el.style.transform = `translateX(${schemas / 10 - 7}%)`;
               }
 
-            }
-            else {
+            } else {
               el.style.transform = `translate(0,0)`
             }
           }
