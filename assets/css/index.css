@@ -3601,6 +3601,7 @@ header-custom.open {
 
 .g_kl .title {
   margin-bottom: 24px;
+  line-height: 1.2;
 }
 
 .g_kl .line {
@@ -3613,7 +3614,7 @@ header-custom.open {
   content: "";
   height: 2px;
   width: 100%;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   background: -o-linear-gradient(9deg, #CE1BFB 10.86%, #35E6CC 89.96%);
   background: linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%);
