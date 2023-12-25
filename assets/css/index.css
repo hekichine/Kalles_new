@@ -5647,7 +5647,7 @@ footer .bg_blur {
     scroll-snap-type: x mandatory;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
   }
 
   .per .flex-el .el {
@@ -6850,6 +6850,7 @@ footer .bg_blur {
   .featured .tophead .left .text-linear,
   .featured .box_sticky .text-linear {
     font-size: 50px;
+    letter-spacing: 0.5px;
   }
 
   .featured .b_t_i {
