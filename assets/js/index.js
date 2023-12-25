@@ -48,19 +48,19 @@ $(document).on('DOMContentLoaded', function() {
     layoutMode: "fitRows",
     filter: "*",
   });
-  // $("[filter-tabs]").on("click", "a.demos_tab_item", function(e) {
-  //   e.preventDefault();
-  //   $(this).parents('[filter-tabs]').find('a.demos_tab_item.active').removeClass('active')
-  //   $(this).toggleClass('active')
-  //   let filterValue = $(this).attr("data-filter");
-  //   $grid.isotope({
-  //     filter: filterValue
-  //   });
-  // });
+  $(document).on("click", "[filter-tabs] a.demos_tab_item", function(e) {
+    e.preventDefault();
+    $('[filter-tabs] a.demos_tab_item.active').removeClass('active')
+    $(this).addClass('active')
+    let filterValue = $(this).attr("data-filter");
+    $grid.isotope({
+      filter: filterValue
+    });
+  });
 
   //  tabs_demos scroll
 
-  $('#tabs_scroll').on('click', 'ul li .control-scroll', function() {
+  $(document).on('click', '#tabs_scroll ul li .control-scroll', function() {
     $(this).parents('ul').find('.control-scroll.active').removeClass('active');
     $(this).addClass('active')
   })

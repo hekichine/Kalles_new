@@ -77,7 +77,6 @@ customElements.define('header-custom', Header)
 class tabsBuilder extends HTMLElement {
   constructor() {
     super();
-
     this.tabs = this.querySelectorAll('.tab-item');
     if (!this.tabs) {
       return;
