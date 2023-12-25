@@ -5297,13 +5297,12 @@ footer .bg_blur {
 .demo_ec_demos {
   display: none !important;
 }
-
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner .img_wrap img{
+  transition: transform .5s linear;
+}
 @media (min-width: 1150px) {
-  .tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner:hover .img_wrap {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-
+  .tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner:hover .img_wrap img{
+   transform: scale(1.05);
   }
 
   .g_kl .section-inner,

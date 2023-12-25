@@ -989,7 +989,7 @@ fill-text .text .highlight {
 }
 
 .custom_modal .m_b_kl {
-  color: #000;
+  --link-color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
