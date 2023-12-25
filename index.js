@@ -38,10 +38,6 @@ $(document).on('DOMContentLoaded', function () {
   $(window).on('load', function () {
     $('.header header-custom').addClass('open');
     $('.header .logo_brand').addClass('effect-running');
-    if(window.innerWidth < 767){
-      console.log("Delete poster video on mobile.");
-      $('video').removeAttr('poster');
-    }
   });
 
   //  isotope  demos 
