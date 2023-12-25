@@ -288,7 +288,7 @@ $(document).on('DOMContentLoaded', function() {
 
   // reveal when scroll clean text
   const rClear = () => {
-    if (window.innerWidth < 767) {
+    if (window.innerWidth < 1150) {
       return;
     }
     let reveals = document.querySelectorAll('[text-animate-reveal]');
