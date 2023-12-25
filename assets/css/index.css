@@ -6737,7 +6737,7 @@ footer .bg_blur {
   }
 
   #tabs_scroll_wrap {
-    /* display: none; */
+    display: none;
   }
   .tabs_scroll .tab_scroll_layout .tabs .control-scroll{
     margin: 10px 0;
