@@ -28,13 +28,13 @@ $(document).on('DOMContentLoaded', function() {
     $(this).addClass('active')
   })
 
-  // active link on mobile
-  $(document).on('click', '#menu_mobile .nav_link', function() {
-    console.log(1);
-    $('#menu_mobile').find('.nav_link.active').removeClass('active');
-    $(this).addClass('active')
-  })
-  return;
+  // // active link on mobile
+  // $(document).on('click', '#menu_mobile .nav_link', function() {
+  //   console.log(1);
+  //   $('#menu_mobile').find('.nav_link.active').removeClass('active');
+  //   $(this).addClass('active')
+  // })
+
   $(window).on('resize', function() {
     if (window.innerWidth > 1149) {
       $('#menu_mobile,.cta_menu_mb.open').removeClass('open');
