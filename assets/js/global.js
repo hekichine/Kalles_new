@@ -249,7 +249,7 @@ class textTyping extends HTMLElement {
   constructor() {
     super();
     if(window.innerWidth < 767){
-      return;
+      // return;
     }
     // Initialize variables
     this.typeJsText = this.querySelector(".animatedText");
