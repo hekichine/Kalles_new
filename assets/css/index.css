@@ -666,8 +666,11 @@ header-custom.open {
   -webkit-transition: all .25s ease-in;
   -o-transition: all .25s ease-in;
   transition: all .25s ease-in;
-}
 
+}
+.banner .tab-item:not(:last-child){
+  margin-bottom: 5px;
+}
 .banner .tab-item .tab-inner {
   color: rgba(255, 255, 255, 0.40);
   font-size: 14px;
@@ -1081,6 +1084,7 @@ header-custom.open {
 .banner .video_content .header {
   max-width: 220px;
   width: 220px;
+  height: 72px;
   margin-bottom: 24px;
   position: relative;
   border-radius: 12px;
