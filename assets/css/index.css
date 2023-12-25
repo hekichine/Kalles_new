@@ -2043,6 +2043,9 @@ header-custom.open {
   font-weight: 500;
   line-height: 1.4;
 }
+.demos_layout .btn_demos.light_skew{
+  --accent-color: #de6475;
+}
 
 .demos_layout .img_wrap {
   margin-bottom: 14px;
