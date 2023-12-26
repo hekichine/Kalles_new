@@ -5823,7 +5823,7 @@ footer .bg_blur {
     font-size: 36px;
   }
 
-  .fts2 .item .item-inner {
+  .fts2 .item:not(.item9) .item-inner {
     max-height: 550px;
   }
 }
