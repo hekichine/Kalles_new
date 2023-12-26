@@ -5792,11 +5792,7 @@ footer .bg_blur {
     left: 7%;
   }
 
-  .booster .item8 .content {
-    top: 10%;
-    position: unset !important;
-    padding: 15px;
-  }
+
 
   .booster .item9 .content {
     top: 10%;
@@ -5863,6 +5859,11 @@ footer .bg_blur {
 }
 
 @media (max-width: 1365px) {
+  .booster .item8 .content {
+    top: 10%;
+    position: unset !important;
+    padding: 15px;
+  }
   .banner .video_content .shopify {
     margin-bottom: 20px;
   }
