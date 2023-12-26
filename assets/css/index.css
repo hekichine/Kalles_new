@@ -3084,7 +3084,7 @@ header-custom header-custom {
   max-height: 437px;
 }
 
-.fts2 :where(.item9, .item10, .item11) .item-inner {
+.fts2 :where( .item10, .item11) .item-inner {
   max-height: 602px;
 }
 
@@ -5548,7 +5548,7 @@ footer .bg_blur {
     max-height: 410px;
   }
 
-  .fts2 :where(.item9, .item10, .item11) .item-inner {
+  .fts2 :where(.item10, .item11) .item-inner {
     max-height: 580px;
   }
 

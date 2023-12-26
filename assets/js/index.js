@@ -352,7 +352,7 @@ $(document).on('DOMContentLoaded', function() {
   ),
   // the animate function now accepts a counter (HTML element)
   animate = counter => {
-    const value = +counter.dataset.akhi,
+    const value = +counter.dataset.vl,
       data = +counter.innerText,
       time = value / speed;
     if (data < value) {
