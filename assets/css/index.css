@@ -1090,7 +1090,7 @@ header-custom header-custom {
   border-radius: 24px;
 }
 
-.banner .video_content header-custom {
+.banner .video_content .header {
   max-width: 220px;
   width: 220px;
   height: 72px;
@@ -5451,6 +5451,9 @@ footer .bg_blur {
 }
 
 @media (min-width: 1700px) {
+  .grid_demos .tophead{
+    max-width: 100%;
+  }
   .featured .content .container {
     /* margin-top: -100px; */
   }

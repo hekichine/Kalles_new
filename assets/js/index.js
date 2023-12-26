@@ -6,7 +6,7 @@ $(document).on('DOMContentLoaded', function() {
   // topbar
 
   let swiperOptions = {
-    speed: 10000,
+    speed: 20000,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
