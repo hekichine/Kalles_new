@@ -5899,6 +5899,9 @@ footer .bg_blur {
 
 
 @media (max-width: 1149px) {
+  .banner .light_eff .line-eff {
+    display: none;
+  }
   .grid_demos .tophead .title {
     font-size: 40px;
   }
