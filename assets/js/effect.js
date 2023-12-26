@@ -53,9 +53,9 @@ class Effect extends HTMLElement {
       return
     }
     if (window.innerWidth < 767) {
-      if(!this.config.showMobile){
+      // if(!this.config.showMobile){
         return;
-      }
+      // }
     }
     // this.EffNum = this.getAttribute('eff-num');
     this.EffNum = this.config.num || 3;
