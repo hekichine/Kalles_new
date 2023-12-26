@@ -183,7 +183,7 @@ $(document).on('DOMContentLoaded', function() {
   // sticky featured
   let header_height = $('header-custom').height();
 
-  $('.featured .box_sticky').attr('style', `--header-height: ${header_height}px;`);
+  $('.featured .box_sticky').attr('style', `--header-height: ${header_height + 10}px;`);
   // // Lấy ra phần tử mục tiêu
   // let targetElement = document.querySelector('.b_t_i');
   // let thresholds = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]

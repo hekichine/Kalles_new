@@ -5824,7 +5824,7 @@ footer .bg_blur {
   }
 
   .fts2 .item .item-inner {
-    /* max-height: 550px; */
+    max-height: 550px;
   }
 }
 
