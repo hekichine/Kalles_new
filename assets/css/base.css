@@ -427,7 +427,7 @@ drawer#menu_mobile {
 }
 
 #menu_mobile .logo_brand {
-  width: 70%;
+  width: 30%;
   position: relative;
   display: flex;
   -align: center;
