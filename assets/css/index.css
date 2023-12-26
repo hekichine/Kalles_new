@@ -5572,6 +5572,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 1600px) {
+  .fts2 .item .item-inner .ratio{
+    opacity: .7;
+  }
   .grid1 .grid_wrap {
     padding: 0;
   }
@@ -5628,9 +5631,7 @@ footer .bg_blur {
   .cs_s .tophead h2{
     font-size: calc(120px * 0.75);
   }
-  .fts2 .item .item-inner .ratio{
-    opacity: .7;
-  }
+  
   .fts2 .item4 .item-inner{
     max-height: 600px;
   }
