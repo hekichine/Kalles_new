@@ -1130,6 +1130,7 @@ fill-text .text .highlight {
 
   .custom_modal .m_btns {
     margin-top: 15px;
+    gap: 15px;
   }
 
   .custom_modal .content-wrap {
