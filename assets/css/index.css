@@ -5573,7 +5573,7 @@ footer .bg_blur {
 
 @media (max-width: 1600px) {
   .fts2 .item .item-inner .ratio{
-    opacity: .7;
+    opacity: .5;
   }
   .grid1 .grid_wrap {
     padding: 0;
