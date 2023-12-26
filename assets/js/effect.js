@@ -69,8 +69,9 @@ class Effect extends HTMLElement {
       this.leaveHover();
     })
     if (window.innerWidth < 767) {
-      this.removeEventListener('mousemove');
-      this.removeEventListener('mouseleave');
+      console.log("remove event effect hover button");
+      this.removeEventListener('mousemove',()=>{});
+      this.removeEventListener('mouseleave',()=>{});
     }
   }
   createChild() {
