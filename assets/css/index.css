@@ -228,9 +228,7 @@ header-custom .header-sticky .header_wrap {
   /* */
 }
 
-.call_to_action .cta:hover {
-  color: var(--accent-color);
-}
+
 
 /* header */
 header-custom {
@@ -477,12 +475,6 @@ header-custom header-custom {
   will-change: opacity, top;
 }
 
-.banner .border_eff:hover {
-  background: rgba(32, 32, 32, 0.32);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  will-change: background, backdrop-filter;
-}
 
 .banner .border_eff::after {
   position: absolute;
@@ -501,19 +493,6 @@ header-custom header-custom {
   will-change: opacity, bottom;
 }
 
-.banner .border_eff:hover::before {
-  top: 15%;
-  opacity: 1;
-}
-
-.banner .border_eff:hover::after {
-  bottom: 15%;
-  opacity: 1;
-}
-
-.banner .border_eff:hover effect-custom::before {
-  opacity: 1;
-}
 
 .banner .col-top {
 
@@ -717,19 +696,7 @@ header-custom header-custom {
   background: var(--linear3);
 }
 
-.banner .tab-item:hover .tab-inner::before {
-  opacity: 1;
-  visibility: visible;
-}
 
-.banner .tab-item:hover .tab-inner .ico_wrap {
-  border: none;
-  background: var(--linear3);
-}
-
-.banner .tab-item:hover .tab-inner {
-  color: #fff;
-}
 
 
 .banner .power_lite img {
@@ -1006,15 +973,6 @@ header-custom header-custom {
   will-change: opacity, bottom;
 }
 
-.banner .effect_boder:hover::before {
-  opacity: 1;
-  top: 0%;
-}
-
-.banner .effect_boder:hover::after {
-  opacity: 1;
-  bottom: 10%;
-}
 
 .banner .banner_video {
   width: 1240px;
@@ -1181,47 +1139,6 @@ header-custom header-custom {
   transition: .35s ease-in;
 }
 
-.banner .trust-item:nth-child(1) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
-  filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
-}
-
-.banner .trust-item:nth-child(2) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
-  filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
-}
-
-.banner .trust-item:nth-child(3) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
-  filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
-}
-
-.banner .trust-item:nth-child(4) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
-  filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
-}
-
-.banner .trust-item:nth-child(5) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
-  filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
-}
-
-.banner .trust-item:nth-child(6) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #56A4CA) drop-shadow(0px 0px 6.936px #56A4CA) drop-shadow(0px 0px 24.276px #56A4CA) drop-shadow(0px 0px 48.552px #56A4CA) drop-shadow(0px 0px 83.232px #56A4CA) drop-shadow(0px 0px 145.656px #56A4CA);
-  filter: drop-shadow(0px 0px 3.468px #56A4CA) drop-shadow(0px 0px 6.936px #56A4CA) drop-shadow(0px 0px 24.276px #56A4CA) drop-shadow(0px 0px 48.552px #56A4CA) drop-shadow(0px 0px 83.232px #56A4CA) drop-shadow(0px 0px 145.656px #56A4CA);
-}
-
-.banner .trust-item:nth-child(7) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #F95858) drop-shadow(0px 0px 6.936px #F95858) drop-shadow(0px 0px 24.276px #F95858) drop-shadow(0px 0px 48.552px #F95858) drop-shadow(0px 0px 83.232px #F95858) drop-shadow(0px 0px 145.656px #F95858);
-  filter: drop-shadow(0px 0px 3.468px #F95858) drop-shadow(0px 0px 6.936px #F95858) drop-shadow(0px 0px 24.276px #F95858) drop-shadow(0px 0px 48.552px #F95858) drop-shadow(0px 0px 83.232px #F95858) drop-shadow(0px 0px 145.656px #F95858);
-}
-
-.banner .trust-item:nth-child(8) svg:hover {
-  -webkit-filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
-  filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
-}
-
-
 .banner .trust-item .text_hover {
   position: absolute;
   bottom: -12px;
@@ -1242,11 +1159,6 @@ header-custom header-custom {
   -o-transition: .15s ease-in;
   transition: .15s ease-in;
   /* 14px */
-}
-
-.banner .trust-item:hover .text_hover {
-  opacity: 1;
-  visibility: visible;
 }
 
 .banner .col-bot {
@@ -1993,15 +1905,6 @@ header-custom header-custom {
   will-change: opacity, bottom;
 }
 
-.demos_layout .col-inner:hover::before {
-  top: 15%;
-  opacity: 1;
-}
-
-.demos_layout .col-inner:hover::after {
-  bottom: 15%;
-  opacity: 1;
-}
 
 .demos_layout .img_wrap::before {
   position: absolute;
@@ -2244,11 +2147,6 @@ header-custom header-custom {
 .tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 10px;
-}
-
-/* Handle on hover */
-.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar-thumb:hover {
-  background: #fff;
 }
 
 .tabs_scroll .tab_scroll_layout .scroll_layout_content {
@@ -3087,9 +2985,7 @@ header-custom header-custom {
 
 }
 
-.fts2 .item .linear_btn:hover {
-  color: #fff;
-}
+
 
 .fts2 .item10 .span {
   font-size: 14px;
@@ -4632,15 +4528,6 @@ header-custom header-custom {
   will-change: opacity, bottom;
 }
 
-.rl .inner:hover::before {
-  top: 15%;
-  opacity: 1;
-}
-
-.rl .inner:hover::after {
-  bottom: 15%;
-  opacity: 1;
-}
 
 .rl .inner .img_w {
   border-radius: 16px;
@@ -4695,10 +4582,6 @@ header-custom header-custom {
   transition: all .35s ease-in-out;
 }
 
-.rl .inner:hover .ct .cta_btn {
-  background: -o-linear-gradient(350deg, #00BAD4 7.72%, #2194FF 118.76%);
-  background: linear-gradient(100deg, #00BAD4 7.72%, #2194FF 118.76%);
-}
 
 /* video tes */
 .vt .section-inner {
@@ -4833,18 +4716,11 @@ header-custom header-custom {
   width: 240px;
 }
 
-.vt button:hover .hidden-label {
-  opacity: 1;
-  width: 240px;
-}
-
 .vt button.active {
   color: #fff;
 }
 
-.vt button:hover {
-  color: #fff;
-}
+
 
 .vt .img_w {
   width: 80px;
@@ -5323,6 +5199,136 @@ footer .bg_blur {
 }
 
 @media (min-width: 1150px) {
+  
+.banner .border_eff:hover {
+  background: rgba(32, 32, 32, 0.32);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  will-change: background, backdrop-filter;
+}
+.call_to_action .cta:hover {
+  color: var(--accent-color);
+}
+.banner .border_eff:hover::before {
+  top: 15%;
+  opacity: 1;
+}
+
+.banner .border_eff:hover::after {
+  bottom: 15%;
+  opacity: 1;
+}
+
+.banner .border_eff:hover effect-custom::before {
+  opacity: 1;
+}
+
+.banner .tab-item:hover .tab-inner::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.banner .tab-item:hover .tab-inner .ico_wrap {
+  border: none;
+  background: var(--linear3);
+}
+
+.banner .tab-item:hover .tab-inner {
+  color: #fff;
+}
+.banner .effect_boder:hover::before {
+  opacity: 1;
+  top: 0%;
+}
+
+.banner .effect_boder:hover::after {
+  opacity: 1;
+  bottom: 10%;
+}
+.banner .trust-item:nth-child(1) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
+  filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
+}
+
+.banner .trust-item:nth-child(2) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
+  filter: drop-shadow(0px 0px 3.468px #72BF41) drop-shadow(0px 0px 6.936px #72BF41) drop-shadow(0px 0px 24.276px #72BF41) drop-shadow(0px 0px 48.552px #72BF41) drop-shadow(0px 0px 83.232px #72BF41) drop-shadow(0px 0px 145.656px #72BF41);
+}
+
+.banner .trust-item:nth-child(3) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
+  filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
+}
+
+.banner .trust-item:nth-child(4) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
+  filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
+}
+
+.banner .trust-item:nth-child(5) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
+  filter: drop-shadow(0px 0px 3.468px #8360A8) drop-shadow(0px 0px 6.936px #8360A8) drop-shadow(0px 0px 24.276px #8360A8) drop-shadow(0px 0px 48.552px #8360A8) drop-shadow(0px 0px 83.232px #8360A8) drop-shadow(0px 0px 145.656px #8360A8);
+}
+
+.banner .trust-item:nth-child(6) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #56A4CA) drop-shadow(0px 0px 6.936px #56A4CA) drop-shadow(0px 0px 24.276px #56A4CA) drop-shadow(0px 0px 48.552px #56A4CA) drop-shadow(0px 0px 83.232px #56A4CA) drop-shadow(0px 0px 145.656px #56A4CA);
+  filter: drop-shadow(0px 0px 3.468px #56A4CA) drop-shadow(0px 0px 6.936px #56A4CA) drop-shadow(0px 0px 24.276px #56A4CA) drop-shadow(0px 0px 48.552px #56A4CA) drop-shadow(0px 0px 83.232px #56A4CA) drop-shadow(0px 0px 145.656px #56A4CA);
+}
+
+.banner .trust-item:nth-child(7) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #F95858) drop-shadow(0px 0px 6.936px #F95858) drop-shadow(0px 0px 24.276px #F95858) drop-shadow(0px 0px 48.552px #F95858) drop-shadow(0px 0px 83.232px #F95858) drop-shadow(0px 0px 145.656px #F95858);
+  filter: drop-shadow(0px 0px 3.468px #F95858) drop-shadow(0px 0px 6.936px #F95858) drop-shadow(0px 0px 24.276px #F95858) drop-shadow(0px 0px 48.552px #F95858) drop-shadow(0px 0px 83.232px #F95858) drop-shadow(0px 0px 145.656px #F95858);
+}
+
+.banner .trust-item:nth-child(8) svg:hover {
+  -webkit-filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
+  filter: drop-shadow(0px 0px 3.468px #C94E4B) drop-shadow(0px 0px 6.936px #C94E4B) drop-shadow(0px 0px 24.276px #C94E4B) drop-shadow(0px 0px 48.552px #C94E4B) drop-shadow(0px 0px 83.232px #C94E4B) drop-shadow(0px 0px 145.656px #C94E4B);
+}
+
+
+.banner .trust-item:hover .text_hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.demos_layout .col-inner:hover::before {
+  top: 15%;
+  opacity: 1;
+}
+
+.demos_layout .col-inner:hover::after {
+  bottom: 15%;
+  opacity: 1;
+}
+
+/* Handle on hover */
+.tabs_scroll .tab_scroll_layout .scroll_layout_content .wrapper::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.fts2 .item .linear_btn:hover {
+  color: #fff;
+}
+.rl .inner:hover::before {
+  top: 15%;
+  opacity: 1;
+}
+
+.rl .inner:hover::after {
+  bottom: 15%;
+  opacity: 1;
+}
+.rl .inner:hover .ct .cta_btn {
+  background: -o-linear-gradient(350deg, #00BAD4 7.72%, #2194FF 118.76%);
+  background: linear-gradient(100deg, #00BAD4 7.72%, #2194FF 118.76%);
+}
+.vt button:hover .hidden-label {
+  opacity: 1;
+  width: 240px;
+}
+.vt button:hover {
+  color: #fff;
+}
   .tabs_scroll .tab_scroll_layout .scroll_layout_content .item-inner:hover .img_wrap img {
     transform: scale(1.05);
   }
