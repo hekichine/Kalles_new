@@ -2467,7 +2467,7 @@ header-custom header-custom {
 .featured .box_sticky {
   position: sticky;
   position: -webkit-sticky;
-  top: var(--header-height, 0);
+  top: var(--header-height, 62px);
   z-index: 1;
 
   margin-bottom: 220px;
