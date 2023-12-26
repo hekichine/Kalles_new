@@ -1405,12 +1405,9 @@ password-popup span{
 .marquee:hover {
   animation-play-state: paused;
 }
-.marquee__seperator {
-  margin: 0 2rem;
-}
+
 .marquee__item {
   display: inline-block;
-  
 }
 @keyframes marquee {
   0% {
