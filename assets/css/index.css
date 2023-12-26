@@ -5833,6 +5833,9 @@ footer .bg_blur {
 }
 
 @media (max-width: 1400px) {
+  .per .flex-el .el{
+    width: 380px;
+  }
   .tabs_scroll .tab_scroll_layout .tabs {
     position: unset;
   }
