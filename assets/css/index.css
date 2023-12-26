@@ -352,7 +352,6 @@ header-custom header-custom {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   z-index: -1;
   pointer-events: none;
   -webkit-user-select: none;
@@ -5451,6 +5450,9 @@ footer .bg_blur {
 }
 
 @media (min-width: 1700px) {
+  .banner .light_eff{
+    bottom: 0;
+  }
   .grid_demos .tophead{
     max-width: 100%;
   }
