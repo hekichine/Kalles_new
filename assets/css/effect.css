@@ -1389,3 +1389,34 @@ password-popup span{
   bottom: 15%;
   opacity: 1;
 }
+
+/* 
+  ===================
+  MARQUEE TEXT INFINITE LOOP, PAUSE ON HOVER
+  ===================
+
+*/
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 25s linear infinite;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+.marquee__seperator {
+  margin: 0 2rem;
+}
+.marquee__item {
+  display: inline-block;
+  
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+ }
+  100% {
+    transform: translateX(-100%);
+ }
+}

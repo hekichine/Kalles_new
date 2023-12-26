@@ -92,7 +92,7 @@ section.topbar .storm svg {
   margin: 0;
 }
 
-.topbar .swiper-slide:not(:last-child) .item-inner::after {
+.topbar .marquee__item:not(:last-child) .item-inner::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -115,15 +115,11 @@ section.topbar .storm svg {
   background-size: 99999% 100%;
 }
 
-.topbar .swiper-wrapper {
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
 
 .topbar .section-inner {
   background: -o-linear-gradient(340deg, #202020 0%, #101010 100%);
   background: linear-gradient(110deg, #202020 0%, #101010 100%);
+  overflow: hidden;
 }
 
 /* 
@@ -356,6 +352,7 @@ header-custom header-custom {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: -1;
   pointer-events: none;
   -webkit-user-select: none;
@@ -380,6 +377,7 @@ header-custom header-custom {
 .banner .section-inner {
   position: relative;
   padding-top: 180px;
+
 }
 
 .banner .heading-top {

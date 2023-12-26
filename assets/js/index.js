@@ -5,21 +5,8 @@ $(document).on('DOMContentLoaded', function() {
   }).init();
   // topbar
 
-  let swiperOptions = {
-    speed: 20000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true
-    },
-    loop: true,
-    slidesPerView: "auto",
-    watchSlidesProgress: true,
-    spaceBetween: 0,
-    grabCursor: false,
-    allowTouchMove: false
-  };
-  let topbar = new Swiper(".topbar .swiper", swiperOptions);
+  
+  
   // active link
   $(document).on('click', '.header .nav_link', function() {
     $('.header').find('.nav_link.active').removeClass('active');
