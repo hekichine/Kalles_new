@@ -62,14 +62,15 @@ class Effect extends HTMLElement {
     this.container = this.querySelector('div[effect-parent]');
     this.background = 'none';
     this.createChild();
-
-    if (window.innerWidth > 1149) {
-      this.addEventListener('mousemove', (e) => {
-        this.onHover(e);
-      })
-      this.addEventListener('mouseleave', () => {
-        this.leaveHover();
-      })
+    this.addEventListener('mousemove', (e) => {
+      this.onHover(e);
+    })
+    this.addEventListener('mouseleave', () => {
+      this.leaveHover();
+    })
+    if (window.innerWidth < 767) {
+      this.removeEventListener('mousemove');
+      this.removeEventListener('mouseleave');
     }
   }
   createChild() {
