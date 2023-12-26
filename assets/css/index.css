@@ -937,13 +937,14 @@ header-custom header-custom {
 
 .banner .effect_boder {
   position: relative;
+  overflow: hidden;
 }
 
 .banner .effect_boder::before {
   position: absolute;
   content: "";
   width: 1px;
-  height: 250px;
+  height: 200px;
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
@@ -960,7 +961,7 @@ header-custom header-custom {
   position: absolute;
   content: "";
   width: 1px;
-  height: 250px;
+  height: 200px;
   background: -o-linear-gradient(top, transparent 30%, #00BAD4 65%, transparent 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(65%, #00BAD4), to(transparent));
   background: linear-gradient(180deg, transparent 30%, #00BAD4 65%, transparent 100%);
