@@ -537,7 +537,7 @@ header-custom header-custom {
   right: 0;
   bottom: 0;
   left: 0;
-  /* background-image: url('/assets/images/banner/bg_frame.png');
+  /* background-image: url('../images/banner/bg_frame.png');
   background-repeat: no-repeat;
   background-size: cover; */
   /* background-color: #000; */
@@ -579,7 +579,7 @@ header-custom header-custom {
 
 .banner .content {
   padding: 12px 20px 0 12px;
-  background-image: url('/assets/images/banner/content_bg.png');
+  background-image: url('../images/banner/content_bg.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1239,7 +1239,7 @@ header-custom header-custom {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/assets/images/grid1/border-wrap.svg') no-repeat center/cover;
+  background: url('../images/grid1/border-wrap.svg') no-repeat center/cover;
 
   pointer-events: none;
   z-index: -1;
@@ -1365,7 +1365,7 @@ header-custom header-custom {
 
 
 .grid1 .item2 .inner {
-  background: url('/assets/images/grid1/item2.png');
+  background: url('../images/grid1/item2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1487,7 +1487,7 @@ header-custom header-custom {
 }
 
 .grid1 .item3 .inner {
-  background: url('/assets/images/grid1/item3.png') no-repeat center;
+  background: url('../images/grid1/item3.png') no-repeat center;
   background-size: cover;
   height: 100%;
   position: relative;
@@ -1547,7 +1547,7 @@ header-custom header-custom {
 
 
 .grid1 .item4 .inner {
-  background-image: url('/assets/images/grid1/item4.png');
+  background-image: url('../images/grid1/item4.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1581,7 +1581,7 @@ header-custom header-custom {
 }
 
 .grid1 .item5 .inner {
-  background-image: url('/assets/images/grid1/item5.png');
+  background-image: url('../images/grid1/item5.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2077,7 +2077,7 @@ header-custom header-custom {
   left: 0;
   right: 0;
   height: 12px;
-  background: url('/assets/images/tab_demos/button_active.svg');
+  background: url('../images/tab_demos/button_active.svg');
 }
 
 .tabs_scroll .tab_scroll_layout .scroll_layout_content {
@@ -2215,7 +2215,7 @@ header-custom header-custom {
   position: absolute;
   content: "";
   inset: 0;
-  background-image: url('/assets/images/tab_demos/item_border.svg');
+  background-image: url('../images/tab_demos/item_border.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-clip: content-box;
@@ -2327,7 +2327,7 @@ header-custom header-custom {
 
 /* text center */
 .text-animate .section-inner {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .text-animate .text-center .text-linear {
@@ -3963,7 +3963,7 @@ header-custom header-custom {
 /* video */
 .s_vv .section-inner {
   position: relative;
-  background-image: url('/assets/images/video/bg.png');
+  background-image: url('../images/video/bg.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4075,7 +4075,7 @@ header-custom header-custom {
 .pn .section-inner {
   padding: 136px 0 0 0;
   display: block;
-  background-image: url('/assets/images/video/bg.png');
+  background-image: url('../images/video/bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4432,7 +4432,7 @@ header-custom header-custom {
 .rl .section-inner {
   padding-top: 136px;
   position: relative;
-  background: url('/assets/images/video/bg.png') no-repeat center/cover;
+  background: url('../images/video/bg.png') no-repeat center/cover;
 }
 
 .rl .tophead {
